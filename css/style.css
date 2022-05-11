@@ -159,6 +159,18 @@ section {
     padding: 20px 0;
 }
 
+#about{
+    height: 517px;
+    background: #FFFCED;
+}
+
+#why{
+    height: 756px;
+    background: #FFFFFF;
+}
+
+
+
 #how .head {
     margin-top: 50px;
     text-align: center;
@@ -183,4 +195,317 @@ section {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+#how .steps{
+    position: relative;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#how .icon{
+    height:100px;
+    width: 100px;
+    position: relative;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#how .steps-icon {
+    position: relative;
+    width: 37px;
+    height: 48px;
+}
+
+#how .steps .icon::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #FEFCF0;
+}
+
+
+#how .steps h1
+{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    color: #505050;
+}
+
+
+#how .steps p
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 134.5%;
+    text-align: center;
+    color: #333333;
+}
+
+#about .head h1{
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    color: #3B3B39;
+}
+
+#about .head h2{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #3B3B39;
+}
+
+#about .head p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #797976;
+}
+
+#about .btn-abt{
+    background: #F7BC00;
+    box-shadow: -4px -4px 0px #FFFFFF, 2px 2px 4px #5F5F5F;
+}
+
+
+#why .head {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+#why .head h1{
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52px;
+    color: #333333;
+}
+
+
+/* #why .icon{
+    height:100px;
+    width: 100px;
+    position: relative;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+#why .service-item .icon::before{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 201px;
+    top: 184px;
+    border-radius: 50%;
+    background: #000000;
+
+}
+
+#why .ride-icon {
+    position: relative;
+    width: 84px;
+    height: 84px;
+
+}
+
+#why .service-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#why .service-item h2{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+
+#why .service-item p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 114.5%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #797979;
+}
+
+#surveillance{
+    height: 437px;
+    background: #FFFCED;
+}
+
+
+#surveillance h1{
+
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+    letter-spacing: 0.025em;
+    color: #797676;
+}
+
+#surveillance p{
+
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 128%;
+    /* or 23px */
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #E3AD00;
+}
+
+#surveillance .read-more p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 110%;
+    /* or 13px */
+    color: #F7BC00;
+}
+
+#surveillance .read-more::before{
+    box-sizing: border-box;
+    width: 103px;
+    height: 25px;
+    left: 118px;
+    top: 356px;
+    border: 1px solid #F7BC00;
+    border-radius: 10px;
+}
+
+
+#download{
+    height: 465px;    
+    background: #FFFFFF;
+}
+
+
+#download .description h1{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 110%;
+    /* or 24px */
+    color: #000000;
+}
+
+
+#download .description p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #333333;
+}
+
+#download .description img{
+    width: 200px;
+    height: 60.47px;
+}
+
+
+
+#client{
+
+    height: 600px;
+    background: #FFFFFF;
+
+}
+
+
+#client h1{
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    /* identical to box height */
+    color: #333333;
+}
+
+#client p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    color: #797979;
+}
+
+#client .card{
+    width: 225px;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 0px #717171, inset -4px -4px 0px #F7BC00;
+    border-radius: 10px;
+}
+
+#client .card img{
+
+    width: 54px;
+    height: 54px;
+}
+
+#client .card h1{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    color: #333333;
+}
+
+#client .card h2{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 140%;
+    /* identical to box height, or 17px */    
+    color: #000000;
+    
+}
+
+
+#client .card p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+    text-align: center;
+    color: #000000;
+}
+
+#client .card .profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
 }
