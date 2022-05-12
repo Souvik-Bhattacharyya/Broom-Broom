@@ -251,12 +251,27 @@ section {
     color: #333333;
 }
 
+#about .about{
+    position: relative;
+    width: 100%;
+}
+
 #about .head h1{
-    font-family: 'Rubik';
+    position: relative;
+    font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 110%;
     color: #3B3B39;
+}
+
+
+
+#about .head h1::before{
+    content: '';
+    background: #F7BC00;
+    height: 6px;
+    width: 50%;
 }
 
 #about .head h2{
@@ -508,4 +523,26 @@ section {
     flex-direction: row;
     justify-content: left;
     align-items: flex-start;
+}
+
+#contact{
+    height: 567px;
+    background: url(../Assets/Icons/Mapbox-Google-Maps-API-Alternative-1024x518.png);
+}
+
+
+#contact .contact-form{
+    width: 350px;
+    height: 423px;
+    left: 822px;
+    top: 40px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+
+#contact .contact-form input{
+    background: #FFFFFF;
+    border: 1px solid #717171;
+    border-radius: 2px;
 }
