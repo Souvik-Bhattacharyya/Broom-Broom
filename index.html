@@ -59,7 +59,7 @@
                         <p>
                             Broombroom, West Bengal's fastest, safestest and trustworthy cab service, with over 10 million installations. We now have operations in over 50+ cities.
                         </p>
-                        <button class="btn" id="signUp">
+                        <button class="btn" id="signUp" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="./Assets/Icons/signup.png" alt="" style="width: 180px; height: 100px;">
             </button>
                     </div>
@@ -361,24 +361,29 @@
         <div class="container">
         
         <div class="contact-form">
-<h1>We Are Happy To Talk With You</h1>
+
+        <h1>We Are Happy To Talk With You</h1>
+
             <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
               </div>
-              <div class="form-floating">
+              <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingname" placeholder="Password">
                 <label for="floatingname">Name</label>
               </div>
-              <div class="form-floating">
+              <div class="form-floating mb-3">
                 <input type="number" class="form-control" id="floatingnumber" placeholder="Password">
                 <label for="floatingnumber">Number</label>
               </div>
-              <div class="form-floating">
+              <div class="form-floating mb-3">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                 <label for="floatingTextarea">Comments</label>
               </div>
-
+              <div class="form-floating mb-3">
+                <button class="btn btn-submit">Submit</button>
+              </div>
+              
 
         </div>
 
@@ -395,6 +400,21 @@
             </div>
     </section> -->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="./Assets/Icons/signup.png" alt="" style="width: 180px; height: 100px;">
+            <img src="./Assets/Icons/signup.png" alt="" style="width: 180px; height: 100px;">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Js -->
     <script src="https://kit.fontawesome.com/c932ce0340.js" crossorigin="anonymous"></script>
