@@ -709,7 +709,6 @@ section {
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
-  overflow: hidden;
 }
 
 #why .head {
@@ -1057,7 +1056,8 @@ section {
   width: 350px;
 }
 
-#contact .contact-form input, #contact textarea {
+#contact .contact-form input, 
+#contact textarea {
   background: #ffffff;
   border-radius: 2px;
   font-size: 14px;
