@@ -8,6 +8,15 @@
   transition: all 0.5s ease;
 }
 
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: .25;
+  width: 70%;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -37,6 +46,30 @@ section {
   box-shadow: none !important;
 }
 
+.btn-warning {
+  background-color: #f7bc00 !important;
+  color: #fff !important;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-warning:hover {
+  color: #fff !important;
+  background-color: #f7bc00 !important;
+
+}
+
+.btn-outline-warning {
+  color: #f7bc00;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-outline-warning:hover {
+  color: #fff !important;
+  background-color: #f7bc00 !important;
+}
+
 /* Navbar --------------------------------------------*/
 
 
@@ -64,11 +97,18 @@ section {
   display: none
 }
 
-.nav-bag .btn-ride{
+.nav-bag .btn-ride {
   background-color: #f7bc00;
   color: #fff;
   border-color: #f7bc00;
 }
+
+.nav-bag .btn-ride:hover {
+  background-color: #fff;
+  color: #f7bc00;
+  border-color: #f7bc00;
+}
+
 
 .nav-bag .navbar-brand #logo {
   width: 80px;
@@ -170,40 +210,109 @@ section {
   padding-right: 100px;
 }
 
-#hero .head .head h1 {
-  font-size: 35px;
+#hero .head h1 {
+  font-size: 32px;
   font-family: "Poppins", sans-serif;
   color: #333333;
   font-weight: 600;
+  width: 500px;
 }
 
 #hero .head h1 span {
-  font-size: 45px;
+  font-size: 38px;
   color: #f7bc00;
 }
 
 #hero .head p {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
+  font-weight: 200;
   color: #797676;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: auto;
+  width: 500px;
 }
 
-#hero .head .btn {
-  padding: 0;
+#hero .head #signUp {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 40px;
+  border: 2px solid #f7bc00;
+}
+
+
+#hand {
+  animation: hand 1s ease;
+}
+
+
+@keyframes hand {
+  0% {
+    transform: rotateX(0);
+  }
+
+  100% {
+    transform: rotateX(30deg);
+  }
+}
+
+
+
+
+
+#hero .head #rec {
+  display: none;
+}
+
+#hero .head #signUp:active #rec {
+  display: block;
+  transform-origin: 50% 50%;
+  animation-delay: 5s;
+  animation: clickIcon 1s ease infinite;
+}
+
+@keyframes clickIcon {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(4);
+  }
+}
+
+
+#hero .head #rec,
+#hero .head #Vector_2,
+#hero .head #Vector {
+  stroke: #f7bc00 !important;
+}
+
+
+#hero .head .btn-outline-warning:hover #rec,
+#hero .head .btn-outline-warning:hover #Vector_2,
+#hero .head .btn-outline-warning:hover #Vector {
+  stroke: #fff !important;
 }
 
 #rightSec {
   position: relative;
 }
 
-#rightSec .carousel {
+#rightSec img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
 }
 
 /* Hero Modal */
@@ -258,6 +367,8 @@ section {
 #about {
   height: 517px;
   background: #fffced;
+  display: flex;
+  align-items: center;
 }
 
 #why {
@@ -278,7 +389,7 @@ section {
 #how .head h1 {
   font-size: 28px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   position: relative;
   padding-bottom: 20px;
 }
@@ -378,7 +489,7 @@ section {
 #vehicle .head h1 {
   text-align: center;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   padding-left: 10px;
   position: relative;
 }
@@ -410,12 +521,36 @@ section {
   height: 600px;
 }
 
-#vehicle .content .carousel .carousel-item #bike{
+#vehicle .content .carousel .carousel-item #bike {
   width: 350px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 100px;
+}
+
+#vehicle .content .carousel .carousel-item .car-png {
+  width: 550px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+#vehicle .content .carousel .carousel-item .toto-png {
+  width: 550px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+#vehicle .content .carousel .carousel-item .auto-png {
+  width: 550px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 0;
 }
 
 #vehicle .carousel-dark .carousel-control-next-icon,
@@ -486,48 +621,69 @@ section {
 
 #vehicle .carousel .carousel-caption {
   position: absolute;
-  right: 15%;
+  /* right: -5%; */
   bottom: 0;
-  left: 48%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   top: 40%;
+  text-align: left;
+  left: auto;
 }
 
+#vehicle .carousel .carousel-caption h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #333;
+}
 
+#vehicle .carousel .carousel-caption h1 span {
+  color: #f7bc00;
+}
+
+#vehicle .carousel .carousel-caption p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  width: 454px;
+}
 
 
 /* About-------------------------------- */
 #about .head h1 {
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 110%;
   color: #3b3b39;
+  width: 40%;
 }
 
 #about .head h1::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  transform: translateY(-50%);
   background: #f7bc00;
   height: 3px;
-  width: 10%;
+  width: 25%;
+  border-radius: 6px;
 }
 
 #about .head h2 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 140%;
   color: #3b3b39;
+  margin-top: 20px;
 }
 
 #about .head p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -543,7 +699,16 @@ section {
 }
 
 #about .btn-abt:active {
-    box-shadow: inset 2px 2px 5px #2929293d, inset -2px -2px 5px #ffffff8c
+  box-shadow: inset 2px 2px 5px #2929293d, inset -2px -2px 5px #ffffff8c
+}
+
+/* Why Ride------------------------------------------------- */
+#why {
+  height: 105vh;
+  background-image: url(../Assets/background/whyUsBg.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 #why .head {
@@ -553,7 +718,7 @@ section {
 }
 
 #why .head h1 {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 44px;
   line-height: 52px;
@@ -561,22 +726,23 @@ section {
 }
 
 #why .service-item .icon {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 20px;
 }
 
 #why .service-item .icon::before {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  background: #c6c6c6;
+  background: #FFEA00;
 }
 
 #why .ride-icon {
@@ -585,15 +751,25 @@ section {
   height: 84px;
 }
 
+#why .st1-col,
+#why .nd2-col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
 #why .service-item {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  margin: 20px 0;
 }
 
 #why .service-item h2 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 140%;
@@ -612,58 +788,116 @@ section {
   color: #797979;
 }
 
+#why .service-item p span {
+  color: #f7bc00;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Survilance------------------------------------------------- */
+
 #surveillance {
   height: 437px;
   background: #fffced;
+  display: flex;
+  align-items: center;
+}
+
+#surveillance .col-head,
+#surveillance .col-caro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#surveillance h1 span {
+  color: #f7bc00;
+  font-size: 42px;
 }
 
 #surveillance h1 {
-  font-family: "Rubik";
-  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
   font-size: 32px;
   line-height: 110%;
-  /* or 35px */
   letter-spacing: 0.025em;
   color: #797676;
+  width: 380px;
 }
 
 #surveillance p {
-  font-family: "Poppins";
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-size: 18px;
   line-height: 128%;
-  /* or 23px */
   letter-spacing: 0.04em;
   text-transform: capitalize;
   color: #e3ad00;
+  width: 500px;
 }
 
-#surveillance .read-more p {
-  font-family: "Poppins";
-  font-weight: 500;
+#surveillance .btn-circle {
+  border: 2px solid #f7bc00;
   font-size: 12px;
-  line-height: 110%;
-  /* or 13px */
   color: #f7bc00;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 115px;
 }
 
-#surveillance .read-more::before {
-  box-sizing: border-box;
-  width: 103px;
-  height: 25px;
-  left: 118px;
-  top: 356px;
-  border: 1px solid #f7bc00;
-  border-radius: 10px;
+#surveillance .btn-circle:hover{
+  color: #fff;
+  background-color: #f7bc00;
 }
 
+#surveillance .btn-circle i {
+  font-size: 16px;
+}
+
+.swiper {
+  width: 460px;
+  height: 305px;
+}
+
+.swiper img{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f7bc00 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+}
+
+/* Download--------------============================================= */
 #download {
-  height: 465px;
+  height: 394px;
   background: #ffffff;
 }
 
+#decs{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 #download .description h1 {
-  font-family: "Montserrat";
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 110%;
@@ -671,23 +905,42 @@ section {
 }
 
 #download .description p {
-  font-family: "Roboto";
-  font-weight: 300;
+  font-family: "Roboto",sans-serif;
+  font-weight: 200;
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0.04em;
   color: #333333;
+  width: 533px;
 }
 
 #download .description img {
   width: 200px;
   height: 60.47px;
+  margin-right: 20px;
 }
 
+
+/* Client------------------========================================== */
 #client {
   position: relative;
   height: 600px;
   background: #ffffff;
+}
+
+#client .col-md-3{
+  display: flex;
+  justify-content: center;
+}
+
+#client .head{
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+}
+#client .body{
+  display: flex;
+  height: 80%;
 }
 
 #client h1 {
@@ -711,22 +964,22 @@ section {
   width: 225px;
   height: 270px;
   background: #ffffff;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), inset 1px 1px 0px #717171,
-    inset -4px -4px 0px #f7bc00;
+  border-bottom: 5px solid #f7bc00;
+  border-right: 5px solid #f7bc00;
   border-radius: 10px;
 }
 
-#client .fbicon{
-    position: absolute;
-    left:88%;
-    top:5px;
-    /* width: 10px; */
-    /* background: #000000 */
+#client .fbicon {
+  position: absolute;
+  left: 88%;
+  top: 5px;
+  /* width: 10px; */
+  /* background: #000000 */
 }
 
 
 #client .card .reviewer {
- position: relative;
+  position: relative;
   width: 30px;
   /* height: 54px; */
 }
@@ -759,7 +1012,7 @@ section {
 #client .card .profile {
   position: absolute;
   top: 20px;
-  left:10px;
+  left: 10px;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -767,14 +1020,15 @@ section {
 }
 
 #client .card .description {
-    position: relative;
-    left:10px;
-  }
-  
+  position: relative;
+  left: 10px;
+}
+
 
 #client .card .comment {
-    top:90px;
-    position: relative;
+  top: 90px;
+  position: relative;
+  padding: 0 20px;
 }
 
 
@@ -795,26 +1049,22 @@ section {
   padding-bottom: 0.1%;
   padding-top: 1%;
   position: absolute;
-  top: 10%;
-  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  height: 430px;
+  width: 350px;
 }
 
-#contact .contact-form:hover{
-    transform: translateY(-10px);
-}
-
-#contact .contact-form:hover {
-  transform: translate(-10px);
-}
-
-#contact .contact-form input {
+#contact .contact-form input, 
+#contact textarea {
   background: #ffffff;
-  border: 1px solid #717171;
   border-radius: 2px;
+  font-size: 14px;
 }
 
 #contact .contact-form h1 {
-position: relative;
+  position: relative;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -825,21 +1075,12 @@ position: relative;
 }
 
 #contact .contact-form h1::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 3px;
-    background-color:#e3ad00;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: #e3ad00;
   margin-left: -7px;
-  }
-
-#contact .contact-form textarea {
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 110.5%;
-  letter-spacing: 0.04em;
-  color: #797976;
 }
 
 #contact .contact-form .btn-submit {
@@ -854,4 +1095,3 @@ position: relative;
   backdrop-filter: blur(26px);
   border-radius: 6px;
 }
-
