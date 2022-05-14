@@ -37,7 +37,49 @@ section {
   box-shadow: none !important;
 }
 
-/* Navbar */
+/* Navbar --------------------------------------------*/
+
+
+.nav-bag {
+  background: #ffffffcc;
+  border-bottom: 2px solid #f7bc00;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px)
+}
+
+.nav-bag .navbar-nav .nav-item .nav-link {
+  color: #9e9e9e
+}
+
+.nav-bag #nav-container {
+  margin-top: -55px;
+  transition: 1s ease
+}
+
+.nav-bag .navbar-brand {
+  position: relative;
+}
+
+.nav-bag .navbar-brand::before {
+  display: none
+}
+
+.nav-bag .btn-ride{
+  background-color: #f7bc00;
+  color: #fff;
+  border-color: #f7bc00;
+}
+
+.nav-bag .navbar-brand #logo {
+  width: 80px;
+  height: 38px;
+  background-image: url(../Assets/Icons/Logo/LOGO-dark-brand.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: scale-down;
+  position: absolute;
+  bottom: 0
+}
 
 .fixed-top {
   position: fixed;
@@ -326,7 +368,7 @@ section {
 
 #vehicle {
   background-image: url(../Assets/svg/vehicles.svg);
-  height: 100vh;
+  height: 800px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -368,11 +410,12 @@ section {
   height: 600px;
 }
 
-
-#vehicle .content .carousel .carousel-item img {
+#vehicle .content .carousel .carousel-item #bike{
+  width: 350px;
   position: absolute;
-  width: 600px;
-  height: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
 }
 
 #vehicle .carousel-dark .carousel-control-next-icon,
@@ -381,7 +424,7 @@ section {
 }
 
 #vehicle .carousel-control-prev-icon {
-  background-image: url(../Assets/Icons/icon/left\ btn.svg) !important;
+  background-image: url(../Assets/Icons/Carousel-Icons/left\ btn.svg) !important;
 }
 
 #vehicle .carousel-control-prev {
@@ -389,7 +432,7 @@ section {
 }
 
 #vehicle .carousel-control-next-icon {
-  background-image: url(../Assets/Icons/icon/right\ btn.svg) !important;
+  background-image: url(../Assets/Icons/Carousel-Icons/right\ btn.svg) !important;
 }
 
 #vehicle .carousel-control-next {
@@ -438,6 +481,7 @@ section {
   opacity: 1;
   border: 5px solid #f7bc00;
   background-color: #fff !important;
+  transform: tra;
 }
 
 #vehicle .carousel .carousel-caption {
@@ -447,7 +491,10 @@ section {
   left: 48%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  top: 40%;}
+  top: 40%;
+}
+
+
 
 
 /* About-------------------------------- */
@@ -490,6 +537,13 @@ section {
 #about .btn-abt {
   background: #f7bc00;
   box-shadow: -4px -4px 0px #ffffff, 2px 2px 4px #5f5f5f;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+#about .btn-abt:active {
+    box-shadow: inset 2px 2px 5px #2929293d, inset -2px -2px 5px #ffffff8c
 }
 
 #why .head {
@@ -613,7 +667,6 @@ section {
   font-weight: 700;
   font-size: 22px;
   line-height: 110%;
-  /* or 24px */
   color: #000000;
 }
 
@@ -641,7 +694,6 @@ section {
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
-  /* identical to box height */
   color: #333333;
 }
 
@@ -650,7 +702,6 @@ section {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  /* or 25px */
   color: #797979;
 }
 
@@ -673,7 +724,6 @@ section {
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
-  /* or 25px */
   color: #333333;
 }
 
@@ -682,7 +732,6 @@ section {
   font-weight: 300;
   font-size: 12px;
   line-height: 140%;
-  /* identical to box height, or 17px */
   color: #000000;
 }
 
@@ -691,7 +740,6 @@ section {
   font-weight: 400;
   font-size: 12px;
   line-height: 120%;
-  /* or 14px */
   text-align: center;
   color: #000000;
 }
@@ -706,6 +754,8 @@ section {
 #contact {
   height: 567px;
   background: url(../Assets/Icons/Mapbox-Google-Maps-API-Alternative-1024x518.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #contact .contact-form {
@@ -716,6 +766,10 @@ section {
   padding-right: 1.5%;
   padding-bottom: 0.1%;
   padding-top: 1%;
+}
+
+#contact .contact-form:hover {
+  transform: translate(-10px);
 }
 
 #contact .contact-form input {
