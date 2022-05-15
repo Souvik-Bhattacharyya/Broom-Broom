@@ -1198,7 +1198,8 @@ section {
   justify-content: flex-start;
 }
 
-#download .description h1 {
+#download .description 
+h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1221,3 +1222,27 @@ section {
   height: 60.47px;
   margin-right: 20px;
 }
+
+
+
+@media (max-width: 767px){
+  #client .body{
+    flex-direction: column;
+    height: 100%;
+  }
+  #client{
+    height: 100%;
+    margin-top: 100px;
+  }
+} 
+
+@media (max-width: 1200px){
+  #client .body{
+    flex-direction: row;
+    height: 100%;
+  }
+  #client{
+    height: 100%;
+    margin-top: 100px;
+  }
+} 
