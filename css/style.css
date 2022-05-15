@@ -1267,3 +1267,45 @@ height:350px;
   margin-right: 20px;
 }
 
+
+
+/* About-------------------------------- */
+
+#aboutpg {
+  position: relative;
+  top: 80px;
+  /* margin-top: 120px; */
+  background: #fffced;
+  display: flex;
+  align-items: center;
+}
+
+
+#aboutpg .main h1 {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+  color: #3b3b39;
+  width: 40%;
+}
+
+#aboutpg .main h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #3b3b39;
+  margin-top: 20px;
+}
+
+#aboutpg .main p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #797976;
+}
+
+
