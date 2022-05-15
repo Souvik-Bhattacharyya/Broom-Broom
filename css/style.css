@@ -1,4 +1,5 @@
 @import url(./fonts.css);
+@import url(./animate.min.css);
 
 * {
   margin: 0;
@@ -72,6 +73,75 @@ section {
 
 /* Navbar --------------------------------------------*/
 
+#offcanvasRight{
+  display: none;
+}
+
+.offcanvas-header {
+  justify-content: center !important;
+}
+
+.offcanvas-header .btn-close{
+  position: absolute;
+  right: 10%;
+}
+
+.offcanvas-header .btn-close:hover{
+  transform: rotate(180deg);
+}
+
+.offcanvas-header .navbar-brand:hover{
+  transition: 1s ease;
+  border-radius: 6px;
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+.offcanvas-body .btn-ride{
+  background-color: #f7bc00;
+  color: #fff;
+}
+
+.offcanvas-end{
+  width: 300px !important;
+}
+
+@media screen and (max-width: 991px) {
+  #offcanvasRight{
+    display: block;
+  }
+  .offcanvas-body{
+    height: 100%;
+  }
+  .navbar-nav {
+    justify-content: space-evenly;
+    width: 60% !important;
+    height: 60%;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .navbar-collapse{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .nav-link{
+    font-size: 16px !important;
+    padding-left: 20px;
+  }
+}
+
+.nav-bag #offcanvasRight{
+  height: 100vh !important;
+}
 
 .nav-bag {
   background: #ffffffcc;
@@ -129,8 +199,8 @@ section {
 }
 
 .navbar-nav {
-  justify-content: space-between;
-  width: 50%;
+  justify-content: space-evenly;
+  width: 60% !important;
 }
 
 .bg-none {
@@ -139,7 +209,7 @@ section {
 
 .nav-link {
   color: #333333 !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 600;
   position: relative;
@@ -155,6 +225,59 @@ section {
   transform: translateX(-50%);
   background-color: #333;
   color: #f7bc00 !important;
+}
+
+.offcanvas-body .nav-link:before {
+  content: "";
+  height: 70%;
+  width: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #f7bc00 !important;
+  margin-left: -11px;
+}
+
+.offcanvas-body .nav-item .active::before {
+  content: "";
+  height: 70%;
+  width: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #f7bc00;
+  color: #f7bc00 !important;
+  margin-left: -11px;
+}
+
+.offcanvas .nav-item{
+  width: 100%;
+  text-align: center;
+  border-left: 20px solid #333;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.offcanvas-body .nav-item:hover{
+  background-color: #333;
+}
+
+.offcanvas-body .nav-item:hover .nav-link.active{
+  color: #f7bc00 !important;
+}
+
+.offcanvas-body .nav-item:hover .nav-link{
+  color: #fff !important;
+  letter-spacing: 1px;
+  transition: letter-spacing 1s ease-in-out;
+}
+.offcanvas-body .nav-item .nav-link.active{
+  background-color: #333;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .nav-item .active {
@@ -263,10 +386,6 @@ section {
     transform: rotateX(30deg);
   }
 }
-
-
-
-
 
 #hero .head #rec {
   display: none;
@@ -877,49 +996,19 @@ section {
 }
 
 .swiper-pagination-bullet-active {
-  background: #f7bc00 !important;
+  background: #fff !important;
 }
 
 .swiper-pagination-bullet {
   background: #fff;
 }
-
-/* Download--------------============================================= */
-#download {
-  height: 394px;
-  background: #ffffff;
+.swiper-button-next, .swiper-button-prev{
+  color: #fff !important;
 }
 
-#decs{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 24px !important;
 }
-
-#download .description h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 110%;
-  color: #000000;
-}
-
-#download .description p {
-  font-family: "Roboto",sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: 0.04em;
-  color: #333333;
-  width: 533px;
-}
-
-#download .description img {
-  width: 200px;
-  height: 60.47px;
-  margin-right: 20px;
-}
-
 
 /* Client------------------========================================== */
 #client {
@@ -990,6 +1079,7 @@ section {
   font-size: 18px;
   line-height: 140%;
   color: #333333;
+  margin-bottom: 0;
 }
 
 #client .card h2 {
@@ -1016,7 +1106,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #client .card .description {
@@ -1071,7 +1161,7 @@ section {
   line-height: 110.5%;
   letter-spacing: 0.04em;
   color: #797976;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 #contact .contact-form h1::before {
@@ -1080,7 +1170,7 @@ section {
   height: 100%;
   width: 3px;
   background-color: #e3ad00;
-  margin-left: -7px;
+  margin-left: -14px;
 }
 
 #contact .contact-form .btn-submit {
@@ -1094,4 +1184,40 @@ section {
   border: 2px solid #ffffff;
   backdrop-filter: blur(26px);
   border-radius: 6px;
+}
+
+/* Download--------------============================================= */
+#download {
+  height: 394px;
+  background: #ffffff;
+}
+
+#decs{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#download .description h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 110%;
+  color: #000000;
+}
+
+#download .description p {
+  font-family: "Roboto",sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #333333;
+  width: 533px;
+}
+
+#download .description img {
+  width: 200px;
+  height: 60.47px;
+  margin-right: 20px;
 }
