@@ -73,7 +73,7 @@ section {
 
 /* Navbar --------------------------------------------*/
 
-#offcanvasRight{
+#offcanvasRight {
   display: none;
 }
 
@@ -81,16 +81,16 @@ section {
   justify-content: center !important;
 }
 
-.offcanvas-header .btn-close{
+.offcanvas-header .btn-close {
   position: absolute;
   right: 10%;
 }
 
-.offcanvas-header .btn-close:hover{
+.offcanvas-header .btn-close:hover {
   transform: rotate(180deg);
 }
 
-.offcanvas-header .navbar-brand:hover{
+.offcanvas-header .navbar-brand:hover {
   transition: 1s ease;
   border-radius: 6px;
   -webkit-animation-name: tada;
@@ -103,22 +103,24 @@ section {
   animation-fill-mode: both
 }
 
-.offcanvas-body .btn-ride{
+.offcanvas-body .btn-ride {
   background-color: #f7bc00;
   color: #fff;
 }
 
-.offcanvas-end{
+.offcanvas-end {
   width: 300px !important;
 }
 
 @media screen and (max-width: 991px) {
-  #offcanvasRight{
+  #offcanvasRight {
     display: block;
   }
-  .offcanvas-body{
+
+  .offcanvas-body {
     height: 100%;
   }
+
   .navbar-nav {
     justify-content: space-evenly;
     width: 60% !important;
@@ -126,20 +128,22 @@ section {
     align-items: center;
     justify-content: center !important;
   }
-  .navbar-collapse{
+
+  .navbar-collapse {
     height: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
-  
+
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 16px !important;
     padding-left: 20px;
   }
 }
 
-.nav-bag #offcanvasRight{
+.nav-bag #offcanvasRight {
   height: 100vh !important;
 }
 
@@ -253,7 +257,7 @@ section {
   margin-left: -11px;
 }
 
-.offcanvas .nav-item{
+.offcanvas .nav-item {
   width: 100%;
   text-align: center;
   border-left: 20px solid #333;
@@ -261,20 +265,21 @@ section {
   border-bottom-right-radius: 6px;
 }
 
-.offcanvas-body .nav-item:hover{
+.offcanvas-body .nav-item:hover {
   background-color: #333;
 }
 
-.offcanvas-body .nav-item:hover .nav-link.active{
+.offcanvas-body .nav-item:hover .nav-link.active {
   color: #f7bc00 !important;
 }
 
-.offcanvas-body .nav-item:hover .nav-link{
+.offcanvas-body .nav-item:hover .nav-link {
   color: #fff !important;
   letter-spacing: 1px;
   transition: letter-spacing 1s ease-in-out;
 }
-.offcanvas-body .nav-item .nav-link.active{
+
+.offcanvas-body .nav-item .nav-link.active {
   background-color: #333;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -966,7 +971,7 @@ section {
   width: 115px;
 }
 
-#surveillance .btn-circle:hover{
+#surveillance .btn-circle:hover {
   color: #fff;
   background-color: #f7bc00;
 }
@@ -980,7 +985,7 @@ section {
   height: 305px;
 }
 
-.swiper img{
+.swiper img {
   width: 100%;
   height: 100%;
 }
@@ -1003,11 +1008,13 @@ section {
   background: #fff;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   color: #fff !important;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-size: 24px !important;
 }
 
@@ -1018,18 +1025,18 @@ section {
   background: #ffffff;
 }
 
-#client .col-md-3{
+#client .col-md-3 {
   display: flex;
   justify-content: center;
 }
 
-#client .head{
+#client .head {
   display: flex;
   flex-direction: column;
   height: 20%;
 }
 
-#client .body{
+#client .body {
   display: flex;
   height: 80%;
   flex-wrap: wrap;
@@ -1049,6 +1056,11 @@ section {
   font-size: 18px;
   line-height: 140%;
   color: #797979;
+}
+
+#client .card-cont {
+  display: flex;
+  justify-content: center;
 }
 
 #client .card {
@@ -1124,8 +1136,13 @@ section {
   padding: 0 20px;
 }
 
+#client .card-cont:nth-child(2),
+#client .card-cont:nth-child(4) {
+  margin-top: 40px;
+}
 
 
+/* Contact============================================================== */
 #contact {
   position: relative;
   height: 567px;
@@ -1149,7 +1166,7 @@ section {
   width: 350px;
 }
 
-#contact .contact-form input, 
+#contact .contact-form input,
 #contact textarea {
   background: #ffffff;
   border-radius: 2px;
@@ -1189,20 +1206,42 @@ section {
   border-radius: 6px;
 }
 
-
-#footer{
-background: rgba(0, 0, 0, 0.8);
-height:350px;
+/* Footer========================================================== */
+#footer {
+  background-image: url(../Assets/Icons/cab.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  display: flex;
 }
 
-#footer .options h1{
-  font-size: medium;
-  color: #FFFFFF;
-  margin-top: 30px;
+#footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  height: 350px;
+  width: 100%;
+}
+
+#footer .container {
+  z-index: 10;
+}
+
+#footer .options h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
 }
 
 
-#footer .cust-app h1{
+#footer .cust-app h1 {
   color: #FFFFFF;
   font-size: larger;
   margin-top: 30px;
@@ -1210,27 +1249,32 @@ height:350px;
 
 }
 
-#footer .pilot-app h1{
+#footer .pilot-app h1 {
   color: #FFFFFF;
   font-size: larger;
   margin-top: 30px;
 }
 
 
-#footer .social-handel h1{
-  margin-top:50%;
-  font-size: large;
-  margin-top: 30px;
+#footer .social-handel h1 {
+  margin: 40px 0 0 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
   color: #FFFFFF;
 }
+
 #footer .social-handel {
   position: relative;
 }
 
 
-#footer .logo{
-  width: 50%;
-  margin-top: 25px;
+#footer .logo {
+  width: 120px;
+  height: 120px;
 }
 
 /* Download--------------============================================= */
@@ -1239,14 +1283,13 @@ height:350px;
   background: #ffffff;
 }
 
-#decs{
+#decs {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-#download .description 
-h1 {
+#download .description h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1255,7 +1298,7 @@ h1 {
 }
 
 #download .description p {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 16px;
   line-height: 130%;
@@ -1307,4 +1350,17 @@ h1 {
   font-size: 16px;
   line-height: 140%;
   color: #797976;
+}
+
+
+/* Media Quaries ===============----------------------------------------*/
+
+@media (max-width: 1200px) {
+  #client {
+    height: 100%;
+  }
+
+  #client .card-cont {
+    margin-top: 40px;
+  }
 }
