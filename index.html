@@ -17,7 +17,7 @@
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="./Assets/Logo/logoDark.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -341,7 +341,7 @@
                             dignissim et, vitae blandit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
                             eget tortor, morbi urna adipiscing mollis lobortis. Justo viverra ac fermentum.
                         </p>
-                        <button class="btn btn-abt">Read More</button>
+                        <button class="btn btn-abt" onclick="window.open('/about.html','_self')";>  Read More</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -726,6 +726,8 @@
                 }
             })
         });
+
+
 
         var swiper = new Swiper(".mySwiper", {
             effect: "cards",
