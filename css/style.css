@@ -1311,3 +1311,11 @@ height:350px;
 }
 
 
+
+
+@media(max-width:992px){
+
+  #client{
+    height: 100%;
+  }
+}
