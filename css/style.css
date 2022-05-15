@@ -1013,7 +1013,7 @@ section {
 
 /* Client------------------========================================== */
 #client {
-  position: relative;
+  /* position: relative; */
   height: 600px;
   background: #ffffff;
 }
@@ -1028,9 +1028,11 @@ section {
   flex-direction: column;
   height: 20%;
 }
+
 #client .body{
   display: flex;
   height: 80%;
+  flex-wrap: wrap;
 }
 
 #client h1 {
