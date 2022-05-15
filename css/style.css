@@ -1245,7 +1245,8 @@ height:350px;
   justify-content: flex-start;
 }
 
-#download .description h1 {
+#download .description 
+h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1268,8 +1269,6 @@ height:350px;
   height: 60.47px;
   margin-right: 20px;
 }
-
-
 
 /* About-------------------------------- */
 
@@ -1309,5 +1308,3 @@ height:350px;
   line-height: 140%;
   color: #797976;
 }
-
-
