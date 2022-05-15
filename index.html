@@ -17,7 +17,7 @@
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="./Assets/Logo/logoDark.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -338,7 +338,7 @@
                             dignissim et, vitae blandit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
                             eget tortor, morbi urna adipiscing mollis lobortis. Justo viverra ac fermentum.
                         </p>
-                        <button class="btn btn-abt">Read More</button>
+                        <button class="btn btn-abt" onclick="window.open('/about.html','_self')";>  Read More</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -508,7 +508,7 @@
             </div>
             <div class="row my-5 px-5">
                 <div class="body">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-12 col-sm-6">
                         <div class="card">
                             <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
                             <div class="profile">
@@ -525,7 +525,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-12 col-sm-6">
                         <div class="card" style="margin-top: 40px;">
                             <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
                             <div class="profile">
@@ -542,7 +542,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-12 col-sm-6">
                         <div class="card">
                             <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
                             <div class="profile">
@@ -559,7 +559,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-12 col-sm-6">
                         <div class="card" style="margin-top: 40px;">
                             <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
                             <div class="profile">
@@ -629,9 +629,74 @@
                             <img src="./Assets/Icons/play_store.png" class="" alt="...">
                         </div>
                     </div>
-                </div>
-    </section>
 
+                </section>
+
+                <section id="footer">
+                    <div class="container">
+                        <div class="row my-5">
+                            <div class="col-md-3">
+                            
+                                
+                                <img src="./Assets/Logo/Broom Boom Logo Design/Delivery/Transparent/Broom Boom Logo Design Final on Black.png" class="logo" alt="...">
+
+                                <div class="social-handel">
+
+                                    <h1> Social handles</h1>
+                                <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
+                                <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
+                                <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
+                                <img src="./Assets/Icons/Vector.png" class="fbicon" alt="...">
+
+                                </div>
+                            
+
+                            </div>
+                            
+                            <div class="col-md-3">
+
+                                <div class="options">
+                                    <h1>Home</h1>
+                                    <h1>Our Services</h1>
+
+                                    <h1>About us</h1>
+
+                                    <h1>Why us</h1>
+
+                                    <h1>Contact us</h1>
+
+                                </div>
+                            
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <div class="cust-app">
+                                    <h1>Customer App</h1>
+                                </div>
+                            <div>
+                                <img src="./Assets/Icons/play_store.png" class="" alt="...">
+
+                            </div>
+                            
+                            </div>
+
+                            <div class="col-md-3">
+
+                                <div class="pilot-app">
+                                    <h1>Pilot App</h1>
+                                </div>
+
+                                <div>
+                                <img src="./Assets/Icons/play_store.png" class="" alt="...">
+
+                                </div>
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 
 
@@ -658,6 +723,8 @@
                 }
             })
         });
+
+
 
         var swiper = new Swiper(".mySwiper", {
             effect: "cards",

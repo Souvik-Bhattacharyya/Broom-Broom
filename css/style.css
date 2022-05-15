@@ -1002,6 +1002,7 @@ section {
 .swiper-pagination-bullet {
   background: #fff;
 }
+
 .swiper-button-next, .swiper-button-prev{
   color: #fff !important;
 }
@@ -1012,7 +1013,7 @@ section {
 
 /* Client------------------========================================== */
 #client {
-  position: relative;
+  /* position: relative; */
   height: 600px;
   background: #ffffff;
 }
@@ -1027,9 +1028,11 @@ section {
   flex-direction: column;
   height: 20%;
 }
+
 #client .body{
   display: flex;
   height: 80%;
+  flex-wrap: wrap;
 }
 
 #client h1 {
@@ -1186,6 +1189,50 @@ section {
   border-radius: 6px;
 }
 
+
+#footer{
+background: rgba(0, 0, 0, 0.8);
+height:350px;
+}
+
+#footer .options h1{
+  font-size: medium;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+
+
+#footer .cust-app h1{
+  color: #FFFFFF;
+  font-size: larger;
+  margin-top: 30px;
+
+
+}
+
+#footer .pilot-app h1{
+  color: #FFFFFF;
+  font-size: larger;
+  margin-top: 30px;
+}
+
+
+#footer .social-handel h1{
+  margin-top:50%;
+  font-size: large;
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+#footer .social-handel {
+  position: relative;
+}
+
+
+#footer .logo{
+  width: 50%;
+  margin-top: 25px;
+}
+
 /* Download--------------============================================= */
 #download {
   height: 394px;
@@ -1223,26 +1270,41 @@ h1 {
   margin-right: 20px;
 }
 
+/* About-------------------------------- */
+
+#aboutpg {
+  position: relative;
+  top: 80px;
+  /* margin-top: 120px; */
+  background: #fffced;
+  display: flex;
+  align-items: center;
+}
 
 
-@media (max-width: 767px){
-  #client .body{
-    flex-direction: column;
-    height: 100%;
-  }
-  #client{
-    height: 100%;
-    margin-top: 100px;
-  }
-} 
+#aboutpg .main h1 {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+  color: #3b3b39;
+  width: 40%;
+}
 
-@media (max-width: 1200px){
-  #client .body{
-    flex-direction: row;
-    height: 100%;
-  }
-  #client{
-    height: 100%;
-    margin-top: 100px;
-  }
-} 
+#aboutpg .main h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #3b3b39;
+  margin-top: 20px;
+}
+
+#aboutpg .main p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #797976;
+}
