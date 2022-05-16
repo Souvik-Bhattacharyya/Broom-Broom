@@ -641,11 +641,11 @@ section {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 100px;
+  /* left: 100px; */
 }
 
 #vehicle .content .carousel .carousel-item .car-png {
-  width: 550px;
+  width: 500px;
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
@@ -653,7 +653,7 @@ section {
 }
 
 #vehicle .content .carousel .carousel-item .toto-png {
-  width: 550px;
+  width: 50git 0px;
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
