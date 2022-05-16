@@ -637,7 +637,7 @@ section {
 }
 
 #vehicle .content .carousel .carousel-item #bike {
-  width: 350px;
+  /* width: 350px;git */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1447,6 +1447,7 @@ section {
 #aboutpg .founder img {
   border-radius: 50%;
   width: 200px;
+  margin-left: 40%;
 }
 
 #aboutpg .description {
@@ -1467,6 +1468,7 @@ section {
   font-size: 16px;
   line-height: 140%;
   color: #797976;
+  margin-left: 80%;
 }
 
 #why #support {
