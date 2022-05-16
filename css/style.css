@@ -1598,17 +1598,21 @@ section {
     height: 100%;
     padding: 50px 0;
   }
-  #download{
+
+  #download {
     height: 100%;
   }
-  #download .description{
+
+  #download .description {
     width: 100%;
   }
-  #download .description p{
+
+  #download .description p {
     width: 100%;
     text-align: center;
   }
-  #download .description img{
+
+  #download .description img {
     width: 160px;
   }
 }
@@ -1645,6 +1649,7 @@ section {
 
   #surveillance .col-head .head h1 {
     width: 336px;
+    text-align: center;
   }
 
   #surveillance .col-head .head {
@@ -1664,51 +1669,53 @@ section {
   #surveillance .staticBg {
     margin-top: 50px;
   }
-  #download .description h1{
+
+  #download .description h1 {
     text-align: center;
     width: 100%;
     margin-top: 50px;
     font-weight: 600;
     font-size: 22px;
   }
+
   #surveillance .staticBg {
     display: none;
   }
-  
+
   #surveillance .swiper {
     display: block;
   }
-  
+
   #hero .head h1 {
     text-align: center;
     color: #fff;
     font-size: 22px;
   }
-  
+
   #hero .head h1 span {
     font-size: 28px;
   }
-  
+
   #hero .head p {
     text-align: center;
     color: #fff;
     font-size: 12px;
   }
-  
+
   #hero .head #signUp {
     border: 2px solid #ffffff;
   }
-  
+
   #hero .head #signUp span {
     color: #ffffff;
   }
-  
+
   #hero .head .btn-outline-warning #Vector_2,
   #hero .head .btn-outline-warning #rec,
   #hero .head .btn-outline-warning #Vector {
     stroke: #fff !important;
   }
-  
+
   #rightSec img {
     display: block;
   }
@@ -1777,5 +1784,88 @@ section {
 
   #hero .head {
     padding: 0;
+  }
+
+  #client h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #client p {
+    text-align: center;
+  }
+
+  #footer {
+    height: 100vh;
+    padding: 20px 0;
+  }
+
+  #footer::before {
+    height: 100vh;
+  }
+
+  #footer .options {
+    align-items: center;
+  }
+
+  #footer .pilot-app h1 {
+    margin-top: 24px;
+  }
+
+  #about {
+    padding: 20px 10px;
+    height: 100%;
+  }
+
+  #vehicle .carousel .carousel-caption {
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #vehicle .content .carousel .carousel-item #bike {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  #vehicle .carousel .carousel-caption p {
+    width: 100%;
+  }
+
+  #vehicle .content .carousel .carousel-item .car-png {
+    width: 250px;
+    position: absolute;
+    top: 80px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  #vehicle .content .carousel .carousel-item .toto-png {
+    width: 300px;
+    position: absolute;
+    top: 60px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  #vehicle .content .carousel .carousel-item .auto-png {
+    width: 350px;
+    position: absolute;
+    top: 60px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  #client .body {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modal.show{
+    padding-right: 0px !important;
   }
 }
