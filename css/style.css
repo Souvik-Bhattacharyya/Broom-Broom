@@ -1615,11 +1615,38 @@ section {
   #download .description img {
     width: 160px;
   }
+  #down-sec{
+    display: flex;
+    flex-direction: column;
+  }
+  #down-sec .pilot-app .pla{
+    margin-top: 5px !important;
+  }
+  #footer .pilot-app h1{
+    margin-top: 10px;
+  }
+
+}
+
+.pla {
+  margin-top: 1.5rem;
+}
+.playStore:nth-child(1){
+  margin-bottom: 24px;
 }
 
 
 
 @media (max-width: 592px) {
+  .playStore:nth-child(1){
+    margin-bottom: 4px !important;
+  }
+  #footer .cust-app h1{
+    margin-top: 0;
+  }
+  #footer .pilot-app h1{
+    margin-top: 10px !important;
+  }
   #why .service-item .icon::before {
     width: 84px;
     height: 84px;
@@ -1867,5 +1894,17 @@ section {
   }
   .modal.show{
     padding-right: 0px !important;
+  }
+  #vehicle .carousel .carousel-caption p{
+    font-weight: 400;
+  }
+  #how .steps p{
+    padding: 0 20px;
+  }
+  #how{
+    padding-bottom: 50px;
+  }
+  .navbar{
+    width: 100vw;
   }
 }
