@@ -447,7 +447,7 @@ section {
   border: 2px solid rgba(255, 255, 255, 1);
 }
 
-#hero .modal-body {
+#signup-modal {
   display: flex;
   height: 250px;
   align-items: center;

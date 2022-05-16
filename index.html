@@ -106,7 +106,9 @@
                             Ride Services
                         </h1>
                         <p>
-                            BROOMBOOM, West Bengal's first quickest and safe bike, cab, and e-rickshaw ride service. We currently operate in more than 21 West Bengal districts and have established roots in other states with the goal of covering all major and little portions of India.
+                            BROOMBOOM, West Bengal's first quickest and safe bike, cab, and e-rickshaw ride service. We
+                            currently operate in more than 21 West Bengal districts and have established roots in other
+                            states with the goal of covering all major and little portions of India.
                         </p>
                         <button class="btn btn-outline-warning p-2" id="signUp" data-bs-toggle="modal"
                             data-bs-target="#signupModal">
@@ -144,12 +146,118 @@
             data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-body">
+                    <div class="modal-body" id="signup-modal">
                         <button type="button" id="cross" data-bs-dismiss="modal">
                             <i class="fas fa-times"></i>
                         </button>
-                        <img src="./Assets/svg/driver.svg" class="icon1" alt="">
-                        <img src="./Assets/svg/user.svg" class="icon2" alt="">
+                        <img src="./Assets/svg/driver.svg" class="icon1" alt="" data-bs-target="#driverSignupModal"
+                            data-bs-toggle="modal" data-bs-dismiss="modal" />
+                        <img data-bs-target="#userSignupModal" data-bs-toggle="modal" data-bs-dismiss="modal"
+                            src="./Assets/svg/user.svg" class="icon2" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- driver modal -->
+        <div class="modal fade" id="driverSignupModal" aria-hidden="true" aria-labelledby="driverSignupModalLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Register as a driver</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-12">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required />
+                                <div class="invalid-feedback">
+                                    Please enter a name
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required />
+                                <div class="invalid-feedback">
+                                    pleae enter your email
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="cnt" class="form-label">Contact</label>
+                                <input type="number" class="form-control" id="cnt" required />
+                                <div class="invalid-feedback">
+                                    pleae enter your contact no
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="location" class="form-label">Location</label>
+                                <input type="text" class="form-control" id="location" readonly
+                                    onclick="handlePermission()" required />
+                                <div class="invalid-feedback">
+                                    you need to allow location to register your account
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-bs-target="#userSignupModal" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">Register as a user</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- user modal -->
+        <div class="modal fade" id="userSignupModal" aria-hidden="true" aria-labelledby="userSignupModalLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Register as a User</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-12">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required />
+                                <div class="invalid-feedback">
+                                    Please enter a name
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required />
+                                <div class="invalid-feedback">
+                                    pleae enter your email
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="cnt" class="form-label">Contact</label>
+                                <input type="number" class="form-control" id="cnt" required />
+                                <div class="invalid-feedback">
+                                    pleae enter your contact no
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="location" class="form-label">Location</label>
+                                <input type="text" class="form-control" id="location" readonly
+                                    onclick="handlePermission()" required />
+                                <div class="invalid-feedback">
+                                    you need to allow location to register your account
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-bs-target="#driverSignupModal" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">Register as a Driver</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +282,8 @@
                         Book in 2 min
                     </h1>
                     <p>
-                        Get your convenient ride at your doorsteps in just 2 tabs. Open BroomBroom app, enter your pickup and drop location. 
+                        Get your convenient ride at your doorsteps in just 2 tabs. Open BroomBroom app, enter your
+                        pickup and drop location.
                         and click “BroomBoom”.
                     </p>
                 </div>
@@ -183,7 +292,7 @@
                         <img src="./Assets/Icons/png/healthicons_truck-driver.png" class="steps-icon" alt="...">
                     </div>
                     <h1>Get A Driver</h1>
-                    <p>Drive at any time and any day with our top-rated drivers who ensures that you experience 
+                    <p>Drive at any time and any day with our top-rated drivers who ensures that you experience
                         nothing but the best ride.
 
                     </p>
@@ -194,7 +303,7 @@
                     </div>
                     <h1>Track your Driver</h1>
                     <p>
-                        Track your driver real-time. Get audio and video surveillance during rides ensuring safety 
+                        Track your driver real-time. Get audio and video surveillance during rides ensuring safety
                         of your loved ones during the ride.
                     </p>
                 </div>
@@ -206,7 +315,7 @@
                         Arrive Safely
                     </h1>
                     <p>
-                        We have incident prevention measures and 
+                        We have incident prevention measures and
                         keep your number private to the drivers. Until you share the OTP rides are not marked complete.
                     </p>
                 </div>
@@ -255,7 +364,9 @@
                                 <h1>
                                     Bi<span>ke</span>
                                 </h1>
-                                <p>Wants to avoid traffic and save time? With BroomBoom  you can now cut your travel time in half. Simply tap a button to reserve a bike and ride away in minutes, all at the most inexpensive rates in town.</p>
+                                <p>Wants to avoid traffic and save time? With BroomBoom you can now cut your travel time
+                                    in half. Simply tap a button to reserve a bike and ride away in minutes, all at the
+                                    most inexpensive rates in town.</p>
                                 <button class="btn btn-outline-warning">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
@@ -281,7 +392,8 @@
                                 <h1>
                                     To<span>to</span>
                                 </h1>
-                                <p>Travel short distances without the trouble of handling and arranging change by booking an e-rickshaw ride online.</p>
+                                <p>Travel short distances without the trouble of handling and arranging change by
+                                    booking an e-rickshaw ride online.</p>
                                 <button class="btn btn-outline-warning">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
@@ -294,7 +406,8 @@
                                 <h1>
                                     Au<span>to</span>
                                 </h1>
-                                <p>Don’t want to stand in a long queue? Book an auto with BroomBoom and ride without having to hassle with an auto driver.</p>
+                                <p>Don’t want to stand in a long queue? Book an auto with BroomBoom and ride without
+                                    having to hassle with an auto driver.</p>
                                 <button class="btn btn-outline-warning">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
@@ -477,7 +590,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-caro">
-                   
+
                     <!-- <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -571,7 +684,8 @@
                             </div>
                             <div class="comment">
                                 <img src="./Assets/Icons/ri_double-quotes-l.png" class="reviewer" alt="...">
-                                <p>Had a great experience with broomboom. It helped me reach home at late hours safely.</p>
+                                <p>Had a great experience with broomboom. It helped me reach home at late hours safely.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -683,12 +797,60 @@
     <script src="https://kit.fontawesome.com/c932ce0340.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" crossorigin="anonymous"></script>
     <script>
+        // validation
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+        // get geo location
+        function handlePermission() {
+            navigator.permissions.query({ name: 'geolocation' }).then(function (result) {
+                if (result.state == 'granted') {
+                    report(result);
+                    navigator.geolocation.getCurrentPosition((e) =>
+                        document.getElementById("location").value = `${e.coords.latitude}, ${e.coords.longitude}`);
+                    geoBtn.style.display = 'none';
+                } else if (result.state == 'prompt') {
+                    report(result.state);
+                    console.log(document.getElementById('location'));
+                    navigator.geolocation.getCurrentPosition((e) =>
+                        document.getElementById("location").value = `${e.coords.latitude}, ${e.coords.longitude}`);
+                } else if (result.state == 'denied') {
+                    report(result.state);
+                    geoBtn.style.display = 'inline';
+                }
+                result.addEventListener('change', function () {
+                    report(result.state);
+                });
+            });
+        }
+
+        function report(state) {
+            console.log('Permission ' + state);
+        }
+
         // Navbar Bg on scroll=====================
         $(document).ready(function () {
             $(window).scroll(function () {
