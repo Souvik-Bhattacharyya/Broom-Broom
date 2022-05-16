@@ -1725,7 +1725,41 @@ section {
   #rightSec img {
     display: block;
   }
+
+  #hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.32);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+  }
+
+  #vehicle .carousel .carousel-caption p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    width: 350px;
+  }
+
+  #vehicle .content .carousel .carousel-item #bike {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
 }
+
+#surveillance .staticBg {
+  display: none;
+}
+
 
 @media (max-width: 568px) {
   #about .head h1 {
@@ -1880,5 +1914,14 @@ section {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1400px) {
+  #vehicle .carousel-control-next{
+    right: calc(0% - 100px) !important;
+  }
+  #vehicle .carousel-control-prev{
+    left: -10% !important; 
   }
 }
