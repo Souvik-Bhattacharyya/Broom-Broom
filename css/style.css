@@ -1615,6 +1615,12 @@ section {
   #download .description img {
     width: 160px;
   }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 
@@ -1865,7 +1871,14 @@ section {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .modal.show{
+
+  .modal.show {
     padding-right: 0px !important;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
   }
 }
