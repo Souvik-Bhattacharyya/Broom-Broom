@@ -1120,6 +1120,11 @@ section {
   align-items: center;
 }
 
+#client .card .profile img{
+  width: 54px;
+  border-radius: 50%;
+}
+
 #client .card .description {
   position: relative;
   left: 10px;
