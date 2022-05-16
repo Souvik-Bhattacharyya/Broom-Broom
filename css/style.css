@@ -151,7 +151,7 @@ section {
   background: #ffffffcc;
   border-bottom: 2px solid #f7bc00;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px)
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-bag .navbar-nav .nav-item .nav-link {
@@ -835,6 +835,12 @@ section {
   background-repeat: repeat;
 }
 
+#why #shield {
+  width: 64px;
+  height: 64px;
+}
+
+
 #why .head {
   margin-top: 50px;
   text-align: center;
@@ -925,6 +931,7 @@ section {
   background: #fffced;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 #surveillance .col-head,
@@ -1232,49 +1239,93 @@ section {
   z-index: 10;
 }
 
-#footer .options h1 {
+#footer .row {
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+}
+
+#footer .options {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-evenly;
+}
+
+#footer .options a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .customer {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .playStore {
+  width: 170px;
+}
+
+#footer .cust-app h1 {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
+  line-height: 36px;
   color: #fff;
 }
 
-
-#footer .cust-app h1 {
-  color: #FFFFFF;
-  font-size: larger;
-  margin-top: 30px;
-
-
-}
-
 #footer .pilot-app h1 {
-  color: #FFFFFF;
-  font-size: larger;
-  margin-top: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 36px;
+  color: #fff;
 }
 
+#footer .social-handel {
+  width: 224px;
+}
+
+#footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer .social-icons .fbicon {
+  color: #fff;
+  font-size: 28px;
+}
 
 #footer .social-handel h1 {
   margin: 40px 0 0 0;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+  text-align: center;
 }
 
 #footer .social-handel {
   position: relative;
 }
 
+#footer #logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #footer .logo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
 }
 
 /* Download--------------============================================= */
@@ -1365,9 +1416,10 @@ section {
   }
 }
 
-#aboutpg .founder{
+#aboutpg .founder {
   margin-top: 20px;
 }
+
 #aboutpg .founder h1 {
   position: relative;
   font-family: "Rubik", sans-serif;
@@ -1380,7 +1432,7 @@ section {
   margin-bottom: 40px;
 }
 
-#aboutpg .founder img{
+#aboutpg .founder img {
   border-radius: 50%;
   width: 200px;
 }
@@ -1393,8 +1445,8 @@ section {
 }
 
 #aboutpg .description p {
- text-align: center;
- margin-bottom: 150px;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 #aboutpg .description p {
@@ -1406,16 +1458,21 @@ section {
 }
 
 
+#why #support {
+  height: 100px;
+  width: 100px;
+}
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-  #client{
+  #client {
     height: 100%;
   }
 
-  #how{
+  #how {
     height: 100%;
   }
+
   #how .steps::before {
     content: '';
     width: 160px;
@@ -1426,9 +1483,151 @@ section {
     height: 1px;
   }
 
-  #why{
+  #why {
     height: 100%;
   }
 
+  #why .service-item .icon::before {
+    width: 84px;
+    height: 84px;
+  }
+
+  #why .service-item h2 {
+    font-size: 18px;
+  }
+
+  #why .ride-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  #why #shield {
+    width: 44px;
+    height: 44px;
+  }
+
+  #why #support {
+    height: 64px;
+    width: 64px;
+  }
+
+  #why .service-item p span {
+    font-size: 16px;
+  }
+
+  #why .service-item p {
+    font-size: 14px;
+  }
+
+  #surveillance .staticBg {
+    display: block !important;
+  }
+
+  #surveillance .swiper {
+    display: none !important;
+  }
+
+  #surveillance .col-head,
+  #surveillance .col-caro {
+    overflow: hidden;
+  }
+
+  #surveillance .staticBg img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #surveillance .col-head .head {
+    width: 100%;
+  }
+
+  #surveillance .col-head .head h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  #surveillance .col-head .head h1 span {
+    font-size: 28px;
+  }
+
+  #surveillance .col-head .head p {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
+@media (max-width: 768px) {
+  #why .service-item .icon::before {
+    width: 84px;
+    height: 84px;
+  }
+
+  #surveillance .staticBg img {
+    width: 336px;
+    border-radius: 20px;
+  }
+
+  #surveillance {
+    height: 100%;
+    padding: 50px 0;
+  }
+}
+
+
+
+@media (max-width: 592px) {
+  #why .service-item .icon::before {
+    width: 84px;
+    height: 84px;
+  }
+
+  .col-head .head {
+    width: 100%;
+  }
+
+  #surveillance {
+    height: 100%;
+  }
+
+  #surveillance h1 span {
+    font-size: 28px;
+  }
+
+  #surveillance h1 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  #surveillance p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #surveillance .col-head .head h1 {
+    width: 336px;
+  }
+
+  #surveillance .col-head .head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #surveillance .col-head .head p{
+    text-align: center;
+    width: 350px;
+    font-size: 14px;
+  }
+  #surveillance .staticBg {
+    margin-top: 50px;
+  }
+}
+
+#surveillance .staticBg {
+  display: none;
+}
+
+#surveillance .swiper {
+  display: block;
+}
