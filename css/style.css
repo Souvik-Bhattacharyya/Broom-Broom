@@ -825,6 +825,12 @@ section {
   background-repeat: repeat;
 }
 
+#why #shield {
+  width: 64px;
+  height: 64px;
+}
+
+
 #why .head {
   margin-top: 50px;
   text-align: center;
@@ -915,6 +921,7 @@ section {
   background: #fffced;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 #surveillance .col-head,
@@ -1219,12 +1226,72 @@ section {
   z-index: 10;
 }
 
+#footer .row {
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+}
+
+#footer .options {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-evenly;
+}
+
+#footer .options a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .customer {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .playStore {
+  width: 170px;
+}
+
+#footer .cust-app h1 {
+  font-family: 'Poppins';
+}
+
 #footer .options h1 {
   font-family: "Poppins";
+
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
+  line-height: 36px;
   color: #fff;
+}
+
+#footer .pilot-app h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 36px;
+  color: #fff;
+}
+
+#footer .social-handel {
+  width: 224px;
+}
+
+#footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer .social-icons .fbicon {
+  color: #fff;
+  font-size: 28px;
 }
 
 #footer .cust-app h1 {
@@ -1244,19 +1311,25 @@ section {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 #footer .social-handel {
   position: relative;
 }
 
+#footer #logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #footer .logo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
 }
 
 /* Download--------------============================================= */
@@ -1353,6 +1426,7 @@ section {
 #aboutpg .founder {
   margin-top: 20px;
 }
+
 #aboutpg .founder h1 {
   position: relative;
   font-family: "Rubik", sans-serif;
@@ -1390,6 +1464,11 @@ section {
   color: #797976;
 }
 
+#why #support {
+  height: 100px;
+  width: 100px;
+}
+
 @media (max-width: 992px) {
   #client {
     height: 100%;
@@ -1398,6 +1477,7 @@ section {
   #how {
     height: 100%;
   }
+
   #how .steps::before {
     content: "";
     width: 160px;
@@ -1411,18 +1491,90 @@ section {
   #why {
     height: 100%;
   }
+
   #hero .head {
     align-items: center;
   }
+
   #hero::before {
     background-image: url(../Assets/svg/car2.svg);
   }
+
   #rightSec img {
     display: none !important;
   }
+
   #hero .head h1 {
     text-align: center;
     color: #fff;
+  }
+
+  #why .service-item .icon::before {
+    width: 84px;
+    height: 84px;
+  }
+
+  #why .service-item h2 {
+    font-size: 18px;
+  }
+
+  #why .ride-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  #why #shield {
+    width: 44px;
+    height: 44px;
+  }
+
+  #why #support {
+    height: 64px;
+    width: 64px;
+  }
+
+  #why .service-item p span {
+    font-size: 16px;
+  }
+
+  #why .service-item p {
+    font-size: 14px;
+  }
+
+  #surveillance .staticBg {
+    display: block !important;
+  }
+
+  #surveillance .swiper {
+    display: none !important;
+  }
+
+  #surveillance .col-head,
+  #surveillance .col-caro {
+    overflow: hidden;
+  }
+
+  #surveillance .staticBg img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #surveillance .col-head .head {
+    width: 100%;
+  }
+
+  #surveillance .col-head .head h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  #surveillance .col-head .head h1 span {
+    font-size: 28px;
+  }
+
+  #surveillance .col-head .head p {
+    font-size: 14px;
+    width: 100%;
   }
 
   #hero .head p {
@@ -1432,48 +1584,154 @@ section {
 }
 
 @media (max-width: 768px) {
+  #why .service-item .icon::before {
+    width: 84px;
+    height: 84px;
+  }
+
+  #surveillance .staticBg img {
+    width: 336px;
+    border-radius: 20px;
+  }
+
+  #surveillance {
+    height: 100%;
+    padding: 50px 0;
+  }
+  #download{
+    height: 100%;
+  }
+  #download .description{
+    width: 100%;
+  }
+  #download .description p{
+    width: 100%;
+    text-align: center;
+  }
+  #download .description img{
+    width: 160px;
+  }
+}
+
+
+
+@media (max-width: 592px) {
+  #why .service-item .icon::before {
+    width: 84px;
+    height: 84px;
+  }
+
+  .col-head .head {
+    width: 100%;
+  }
+
+  #surveillance {
+    height: 100%;
+  }
+
+  #surveillance h1 span {
+    font-size: 28px;
+  }
+
+  #surveillance h1 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  #surveillance p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #surveillance .col-head .head h1 {
+    width: 336px;
+  }
+
+  #surveillance .col-head .head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #surveillance .col-head .head p {
+    text-align: center;
+    width: 350px;
+    font-size: 14px;
+  }
+
+  #surveillance .staticBg {
+    margin-top: 50px;
+  }
+  #download .description h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  #surveillance .staticBg {
+    display: none;
+  }
+  
+  #surveillance .swiper {
+    display: block;
+  }
+  
   #hero .head h1 {
     text-align: center;
     color: #fff;
     font-size: 22px;
   }
+  
   #hero .head h1 span {
     font-size: 28px;
   }
+  
   #hero .head p {
     text-align: center;
     color: #fff;
     font-size: 12px;
   }
+  
   #hero .head #signUp {
     border: 2px solid #ffffff;
   }
+  
   #hero .head #signUp span {
     color: #ffffff;
   }
+  
   #hero .head .btn-outline-warning #Vector_2,
   #hero .head .btn-outline-warning #rec,
   #hero .head .btn-outline-warning #Vector {
     stroke: #fff !important;
   }
+  
+  #rightSec img {
+    display: block;
+  }
 }
-#rightSec img {
-  display: block;
-}
+
 @media (max-width: 568px) {
   #about .head h1 {
     font-size: 28px;
     width: 50%;
   }
+
   #about .head p {
     font-size: 14px;
   }
+
   #about .head h2 {
     font-size: 16px;
   }
+
   #why .head p {
     font-size: 14px;
   }
+
   #why .head h1 {
     font-size: 28px;
     margin-bottom: 0px !important;
@@ -1483,31 +1741,40 @@ section {
     width: 84px;
     height: 84px;
   }
+
   #why .ride-icon {
     width: 45px !important;
     height: 45px !important;
   }
+
   #why .service-item h2 {
     font-size: 20px;
   }
+
   #why .service-item p {
     font-size: 16px;
   }
+
   #why .service-item p span {
     font-size: 18px;
   }
+
   #hero::before {
     background-image: url(../Assets/svg/car3.svg);
   }
+
   #hero .head h1 {
     width: 100%;
   }
+
   #hero .head h1 span {
     width: 100%;
   }
+
   #hero .head p {
     width: 100%;
   }
+
   #hero .head {
     padding: 0;
   }
