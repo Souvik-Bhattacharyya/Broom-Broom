@@ -14,7 +14,7 @@ hr {
   color: inherit;
   background-color: currentColor;
   border: 0;
-  opacity: .25;
+  opacity: 0.25;
   width: 70%;
 }
 
@@ -57,7 +57,6 @@ section {
 .btn-warning:hover {
   color: #fff !important;
   background-color: #f7bc00 !important;
-
 }
 
 .btn-outline-warning {
@@ -100,7 +99,7 @@ section {
   -webkit-animation-duration: var(--animate-duration);
   animation-duration: var(--animate-duration);
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both
+  animation-fill-mode: both;
 }
 
 .offcanvas-body .btn-ride {
@@ -134,7 +133,6 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-
   }
 
   .nav-link {
@@ -151,16 +149,16 @@ section {
   background: #ffffffcc;
   border-bottom: 2px solid #f7bc00;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px)
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-bag .navbar-nav .nav-item .nav-link {
-  color: #9e9e9e
+  color: #9e9e9e;
 }
 
 .nav-bag #nav-container {
   margin-top: -55px;
-  transition: 1s ease
+  transition: 1s ease;
 }
 
 .nav-bag .navbar-brand {
@@ -168,7 +166,7 @@ section {
 }
 
 .nav-bag .navbar-brand::before {
-  display: none
+  display: none;
 }
 
 .nav-bag .btn-ride {
@@ -183,7 +181,6 @@ section {
   border-color: #f7bc00;
 }
 
-
 .nav-bag .navbar-brand #logo {
   width: 80px;
   height: 38px;
@@ -192,7 +189,7 @@ section {
   background-size: contain;
   object-fit: scale-down;
   position: absolute;
-  bottom: 0
+  bottom: 0;
 }
 
 .fixed-top {
@@ -376,11 +373,9 @@ section {
   border: 2px solid #f7bc00;
 }
 
-
 #hand {
   animation: hand 1s ease;
 }
-
 
 @keyframes hand {
   0% {
@@ -413,13 +408,11 @@ section {
   }
 }
 
-
 #hero .head #rec,
 #hero .head #Vector_2,
 #hero .head #Vector {
   stroke: #f7bc00 !important;
 }
-
 
 #hero .head .btn-outline-warning:hover #rec,
 #hero .head .btn-outline-warning:hover #Vector_2,
@@ -531,12 +524,12 @@ section {
 }
 
 #how .steps::before {
-  content: '';
+  content: "";
   width: 160px;
   position: absolute;
   top: 50px;
   right: -75px;
-  background-color: #E1D9DC;
+  background-color: #e1d9dc;
   height: 1px;
 }
 
@@ -573,7 +566,6 @@ section {
   width: 48px;
 }
 
-
 #how .steps .icon::before {
   content: "";
   position: absolute;
@@ -581,7 +573,7 @@ section {
   height: 80px;
   border-radius: 50%;
   background: #fefcf0;
-  border: 2px solid #E1D9DC;
+  border: 2px solid #e1d9dc;
 }
 
 #how .steps h1 {
@@ -619,7 +611,7 @@ section {
 }
 
 #vehicle .head h1::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -638,7 +630,6 @@ section {
 #vehicle .content .carousel-item {
   height: 100%;
 }
-
 
 #vehicle .content .carousel {
   width: 100%;
@@ -730,10 +721,10 @@ section {
   border: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  transition: opacity .6s ease;
+  transition: opacity 0.6s ease;
   border: 5px solid #333;
   position: relative;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #vehicle .carousel-indicators .active {
@@ -772,7 +763,6 @@ section {
   color: #333;
   width: 454px;
 }
-
 
 /* About-------------------------------- */
 #about .head h1 {
@@ -823,7 +813,7 @@ section {
 }
 
 #about .btn-abt:active {
-  box-shadow: inset 2px 2px 5px #2929293d, inset -2px -2px 5px #ffffff8c
+  box-shadow: inset 2px 2px 5px #2929293d, inset -2px -2px 5px #ffffff8c;
 }
 
 /* Why Ride------------------------------------------------- */
@@ -866,7 +856,7 @@ section {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #FFEA00;
+  background: #ffea00;
 }
 
 #why .ride-icon {
@@ -1081,7 +1071,6 @@ section {
   /* background: #000000 */
 }
 
-
 #client .card .reviewer {
   position: relative;
   width: 30px;
@@ -1129,7 +1118,6 @@ section {
   left: 10px;
 }
 
-
 #client .card .comment {
   top: 90px;
   position: relative;
@@ -1140,7 +1128,6 @@ section {
 #client .card-cont:nth-child(4) {
   margin-top: 40px;
 }
-
 
 /* Contact============================================================== */
 #contact {
@@ -1185,7 +1172,7 @@ section {
 }
 
 #contact .contact-form h1::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 3px;
@@ -1219,7 +1206,7 @@ section {
 }
 
 #footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1233,44 +1220,39 @@ section {
 }
 
 #footer .options h1 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   color: #fff;
 }
 
-
 #footer .cust-app h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: larger;
   margin-top: 30px;
-
-
 }
 
 #footer .pilot-app h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: larger;
   margin-top: 30px;
 }
 
-
 #footer .social-handel h1 {
   margin: 40px 0 0 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #footer .social-handel {
   position: relative;
 }
-
 
 #footer .logo {
   width: 120px;
@@ -1325,7 +1307,6 @@ section {
   /* margin-bottom: 50px; */
 }
 
-
 #aboutpg .main h1 {
   position: relative;
   font-family: "Rubik", sans-serif;
@@ -1363,9 +1344,13 @@ section {
   #client .card-cont {
     margin-top: 40px;
   }
+
+  #signup {
+    justify-self: center;
+  }
 }
 
-#aboutpg .founder{
+#aboutpg .founder {
   margin-top: 20px;
 }
 #aboutpg .founder h1 {
@@ -1380,7 +1365,7 @@ section {
   margin-bottom: 40px;
 }
 
-#aboutpg .founder img{
+#aboutpg .founder img {
   border-radius: 50%;
   width: 200px;
 }
@@ -1393,8 +1378,8 @@ section {
 }
 
 #aboutpg .description p {
- text-align: center;
- margin-bottom: 150px;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 #aboutpg .description p {
@@ -1405,19 +1390,16 @@ section {
   color: #797976;
 }
 
-
-
-@media(max-width:992px){
-
-  #client{
+@media (max-width: 992px) {
+  #client {
     height: 100%;
   }
 
-  #how{
+  #how {
     height: 100%;
   }
   #how .steps::before {
-    content: '';
+    content: "";
     width: 160px;
     position: absolute;
     top: 50px;
@@ -1426,9 +1408,107 @@ section {
     height: 1px;
   }
 
-  #why{
+  #why {
     height: 100%;
   }
+  #hero .head {
+    align-items: center;
+  }
+  #hero::before {
+    background-image: url(../Assets/svg/car2.svg);
+  }
+  #rightSec img {
+    display: none !important;
+  }
+  #hero .head h1 {
+    text-align: center;
+    color: #fff;
+  }
 
+  #hero .head p {
+    text-align: center;
+    color: #fff;
+  }
 }
 
+@media (max-width: 768px) {
+  #hero .head h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+  }
+  #hero .head h1 span {
+    font-size: 28px;
+  }
+  #hero .head p {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+  }
+  #hero .head #signUp {
+    border: 2px solid #ffffff;
+  }
+  #hero .head #signUp span {
+    color: #ffffff;
+  }
+  #hero .head .btn-outline-warning #Vector_2,
+  #hero .head .btn-outline-warning #rec,
+  #hero .head .btn-outline-warning #Vector {
+    stroke: #fff !important;
+  }
+}
+#rightSec img {
+  display: block;
+}
+@media (max-width: 568px) {
+  #about .head h1 {
+    font-size: 28px;
+    width: 50%;
+  }
+  #about .head p {
+    font-size: 14px;
+  }
+  #about .head h2 {
+    font-size: 16px;
+  }
+  #why .head p {
+    font-size: 14px;
+  }
+  #why .head h1 {
+    font-size: 28px;
+    margin-bottom: 0px !important;
+  }
+
+  #why .service-item .icon::before {
+    width: 84px;
+    height: 84px;
+  }
+  #why .ride-icon {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  #why .service-item h2 {
+    font-size: 20px;
+  }
+  #why .service-item p {
+    font-size: 16px;
+  }
+  #why .service-item p span {
+    font-size: 18px;
+  }
+  #hero::before {
+    background-image: url(../Assets/svg/car3.svg);
+  }
+  #hero .head h1 {
+    width: 100%;
+  }
+  #hero .head h1 span {
+    width: 100%;
+  }
+  #hero .head p {
+    width: 100%;
+  }
+  #hero .head {
+    padding: 0;
+  }
+}
