@@ -1571,6 +1571,19 @@ section {
     height: 100%;
     padding: 50px 0;
   }
+  #download{
+    height: 100%;
+  }
+  #download .description{
+    width: 100%;
+  }
+  #download .description p{
+    width: 100%;
+    text-align: center;
+  }
+  #download .description img{
+    width: 160px;
+  }
 }
 
 
@@ -1621,6 +1634,13 @@ section {
   }
   #surveillance .staticBg {
     margin-top: 50px;
+  }
+  #download .description h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 22px;
   }
 }
 
