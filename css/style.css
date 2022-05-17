@@ -72,6 +72,14 @@ section {
 
 /* Navbar --------------------------------------------*/
 
+.navbar-brand .navBrand {
+  height: 35px;
+  width: 92px;
+  background-repeat: no-repeat;
+  background-image: url(../Assets/Logo/logoDark.png);
+  background-size: contain;
+}
+
 #offcanvasRight {
   display: none;
 }
@@ -112,6 +120,38 @@ section {
 }
 
 @media screen and (max-width: 991px) {
+  .navbar-brand .navBrand {
+    height: 35px;
+    width: 92px;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/Logo/logoLight.png);
+    background-size: contain;
+  }
+
+  .nav-bag .navbar-brand .navBrand {
+    height: 35px;
+    width: 92px;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/Logo/logoDark.png);
+    background-size: contain;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background: url(../Assets/svg/nav-icon-light.svg) !important;
+  }
+
+  .nav-bag .navbar-toggler-icon {
+    background: url(../Assets/svg/nav-icon.svg) !important;
+  }
+
+  .nav-bag .container .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.34) !important;
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.34) !important;
+  }
+
   #offcanvasRight {
     display: block;
   }
@@ -441,7 +481,7 @@ section {
 }
 
 #hero .modal-content {
-  background-color: #ffffffbb;
+  background-color: transparent;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(255, 255, 255, 1);
@@ -449,9 +489,13 @@ section {
 
 #signup-modal {
   display: flex;
-  height: 250px;
+  height: 100%;
   align-items: center;
   justify-content: space-evenly;
+}
+
+#hero .modal-body img {
+  width: 35%;
 }
 
 #hero .modal-body img:hover {
@@ -708,30 +752,29 @@ section {
 #vehicle .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 40px;
-  height: 40px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff !important;
+  background-color: #333 !important;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   transition: opacity 0.6s ease;
-  border: 5px solid #333;
+  border: 3px solid #333;
   position: relative;
   opacity: 0.5;
 }
 
 #vehicle .carousel-indicators .active {
   opacity: 1;
-  border: 5px solid #f7bc00;
-  background-color: #fff !important;
-  transform: tra;
+  border: 3px solid #f7bc00;
+  background-color: #f7bc00 !important;
 }
 
 #vehicle .carousel .carousel-caption {
@@ -788,8 +831,8 @@ section {
 }
 
 #about .head h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 140%;
   color: #3b3b39;
@@ -1120,7 +1163,7 @@ section {
   align-items: center;
 }
 
-#client .card .profile img{
+#client .card .profile img {
   width: 54px;
   border-radius: 50%;
 }
@@ -1339,7 +1382,8 @@ section {
 
 /* Download--------------============================================= */
 #download {
-  height: 394px;
+  padding-top: 100px;
+  height: 100%;
   background: #ffffff;
 }
 
@@ -1749,7 +1793,7 @@ section {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color: #333;
+    color: #595959;
     width: 350px;
   }
 
@@ -1760,18 +1804,30 @@ section {
     transform: translateX(-50%);
     left: 50%;
   }
+  /* #vehicle .carousel .carousel-control-next{
+    right: 0 !important;
+    bottom: 8%;
+  }
+  #vehicle .carousel .carousel-control-prev{
+    left: 0 !important;
+    bottom: 8%;
+  } */
 
+  #vehicle .carousel .carousel-control-next,
+  #vehicle .carousel .carousel-control-prev{
+    display: none;
+  }
 }
 
 #surveillance .staticBg {
   display: none;
 }
 
-
+/* 568px========================================================== */
 @media (max-width: 568px) {
   #about .head h1 {
     font-size: 28px;
-    width: 50%;
+    width: 55%;
   }
 
   #about .head p {
@@ -1868,22 +1924,25 @@ section {
     left: 0;
     text-align: center;
     width: 100%;
+    height: 280px;
+    top: 45%;
   }
 
   #vehicle .content .carousel .carousel-item #bike {
-    width: 150px;
+    width: 450px;
     position: absolute;
-    top: 50px;
+    top: 0;
     transform: translateX(-50%);
     left: 50%;
   }
 
   #vehicle .carousel .carousel-caption p {
     width: 100%;
+    padding: 0 10px;
   }
 
   #vehicle .content .carousel .carousel-item .car-png {
-    width: 250px;
+    width: 100%;
     position: absolute;
     top: 80px;
     transform: translateX(-50%);
@@ -1913,6 +1972,10 @@ section {
     justify-content: center;
   }
 
+  #how .steps:nth-child(4){
+  border-bottom: transparent;
+  }
+
   .modal.show {
     padding-right: 0px !important;
   }
@@ -1922,13 +1985,31 @@ section {
     width: 100%;
     overflow-x: hidden;
   }
+
+  #how .steps {
+    margin: 10px 0;
+    padding: 0 40px;
+    border-bottom: 2px solid #E1D9DC;
+  }
+
+  #how .steps h1 {
+    color: #313131;
+  }
+  #vehicle .carousel .carousel-caption h1{
+    font-size: 36px;
+  }
+
 }
 
+/* End 568px========================================================== */
+
+
 @media (max-width: 1400px) {
-  #vehicle .carousel-control-next{
+  #vehicle .carousel-control-next {
     right: calc(0% - 100px) !important;
   }
-  #vehicle .carousel-control-prev{
-    left: -10% !important; 
+
+  #vehicle .carousel-control-prev {
+    left: -10% !important;
   }
 }
