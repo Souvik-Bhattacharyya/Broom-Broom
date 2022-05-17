@@ -55,7 +55,8 @@ $(document).ready(function () {
 			},
 			success: function (result) {
 				var id = new Date().getTime().toString();
-                console.log(JSON.parse(result));
+
+                // console.log(JSON.parse(result));
 				if (JSON.parse(result)?.status) {
 					var alertDivHtml = `<div id='${id}' class="alert alert-success alert-dismissible fade show" role="alert">
 										<strong>Your message successfully sent.</strong> 
