@@ -44,6 +44,11 @@ $(document).ready(function () {
 		$('#input-mobile').val('');
 		$('#input-message').val('');
 
+		setTimeout(() => {
+			$('#alert-wrapper').text('');
+		 }, 5000);
+
+
 		$.ajax({
 			url: 'contact.php',
 			method: 'POST',
@@ -105,6 +110,8 @@ $(document).ready(function () {
 		$('#modal-service').val('');
 		$('#modal-mobile').val('');
 
+
+
 		$.ajax({
 			url: 'contact.php',
 			method: 'POST',
@@ -140,5 +147,7 @@ $(document).ready(function () {
 				alert('Something went wrong.');
 			},
 		});
+
+
 	});
 });
