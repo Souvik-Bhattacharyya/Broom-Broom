@@ -17,7 +17,7 @@ function get_value($key)
 	return "";
 }
 
-echo "hi";
+// echo "hi";
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// Validate name
