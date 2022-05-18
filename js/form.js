@@ -88,44 +88,119 @@ $(document).ready(function () {
 		});
 	});
 
-	$('#modal-form').on('submit', function (e) {
+	// $('#modal-form').on('submit', function (e) {
+	// 	// prevet from submit form
+	// 	e.preventDefault();
+
+	// 	// submit all data by ajax
+	// 	var name = $('#modal-name').val().trim(),
+	// 		email = $('#modal-email').val().trim(),
+	// 		service = $('#modal-service').val().trim(),
+	// 		mobile = $('#modal-mobile').val().trim();
+
+	// 	if (name == '' || email == '' || service == undefined || mobile == '') {
+	// 		alert('Please fill-up the form before submit.');
+	// 		return;
+	// 	}
+
+	// 	$('#myModal').modal('hide');
+	// 	// clear form
+	// 	$('#modal-name').val('');
+	// 	$('#modal-email').val('');
+	// 	$('#modal-service').val('');
+	// 	$('#modal-mobile').val('');
+
+
+
+	// 	$.ajax({
+	// 		url: 'contact.php',
+	// 		method: 'POST',
+	// 		data: {
+	// 			name,
+	// 			email,
+	// 			service,
+	// 			mobile,
+	// 		},
+	// 		success: function (result) {
+	// 			var id = new Date().getTime().toString();
+	// 			if (JSON.parse(result)?.status) {
+	// 				var alertDivHtml = `<div id='${id}' class="alert alert-success alert-dismissible fade show" role="alert">
+	// 									<strong>Your message successfully save. We will contact you soon.</strong> 
+	// 									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	// 									<span aria-hidden="true">&times;</span>
+	// 									</button>
+	// 								</div>`;
+	// 				$('#alert-wrapper').append(alertDivHtml);
+	// 				alertCloseHandler(id);
+	// 			} else {
+	// 				var alertDivHtml = `<div id='${id}' class="alert alert-danger alert-dismissible fade show" role="alert">
+	// 				<strong>Your message not sent. Something went wrong.</strong> 
+	// 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	// 				<span aria-hidden="true">&times;</span>
+	// 				</button>
+	// 				</div>`;
+	// 				$('#alert-wrapper').append(alertDivHtml);
+	// 				alertCloseHandler(id);
+	// 			}
+	// 		},
+	// 		error: function (request, status, error) {
+	// 			alert('Something went wrong.');
+	// 		},
+	// 	});
+
+
+	// });
+
+// post form
+
+	$('#pilot-form').on('submit', function (e) {
 		// prevet from submit form
 		e.preventDefault();
-
+		// alert("Hi");
 		// submit all data by ajax
-		var name = $('#modal-name').val().trim(),
-			email = $('#modal-email').val().trim(),
-			service = $('#modal-service').val().trim(),
-			mobile = $('#modal-mobile').val().trim();
+		var name = $('#name').val(),
+			email = $('#email').val(),
+			cnt = $('#cnt').val(),
+			location = $('#location').val(),
+			type= $('#type').val();
 
-		if (name == '' || email == '' || service == undefined || mobile == '') {
+		if (name == '' || email == '' || cnt == '' || location == '') {
 			alert('Please fill-up the form before submit.');
 			return;
 		}
 
-		$('#myModal').modal('hide');
+
+		setTimeout(() => {
+			$('#alert-wrapper').text('');
+		 }, 5000);
+
+		// console.log(type);
+        // console.log(name);
 		// clear form
-		$('#modal-name').val('');
-		$('#modal-email').val('');
-		$('#modal-service').val('');
-		$('#modal-mobile').val('');
-
-
+		$('#name').val('');
+		$('#email').val('');
+		$('#cnt').val('');
+		$('#location').val('');
+		$('#type').val('');
 
 		$.ajax({
-			url: 'contact.php',
+			url: 'register.php',
 			method: 'POST',
 			data: {
 				name,
 				email,
-				service,
-				mobile,
+				cnt,
+				location,
+				type
 			},
 			success: function (result) {
+				console.log(result);
 				var id = new Date().getTime().toString();
+
+                // console.log(JSON.parse(result));
 				if (JSON.parse(result)?.status) {
 					var alertDivHtml = `<div id='${id}' class="alert alert-success alert-dismissible fade show" role="alert">
-										<strong>Your message successfully save. We will contact you soon.</strong> 
+										<strong>Your message successfully sent.</strong> 
 										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 										</button>
@@ -147,7 +222,77 @@ $(document).ready(function () {
 				alert('Something went wrong.');
 			},
 		});
-
-
 	});
+
+	$('#user-form').on('submit', function (e) {
+		// prevet from submit form
+		e.preventDefault();
+		// submit all data by ajax
+		var name = $('#name-user').val(),
+			email = $('#email-user').val(),
+			cnt = $('#cnt-user').val(),
+			location = $('#location-user').val(),
+			type= $('#type-user').val();
+
+		if (name == '' || email == '' || cnt == '' || location == '' ) {
+			alert('Please fill-up the form before submit.');
+			return;
+		}
+
+
+		setTimeout(() => {
+			$('#alert-wrapper-user').text('');
+		 }, 5000);
+
+		// console.log(type);
+        // console.log(name);
+		// clear form
+		$('#name').val('');
+		$('#email').val('');
+		$('#cnt').val('');
+		$('#location').val('');
+		$('#type').val('');
+
+		$.ajax({
+			url: 'register.php',
+			method: 'POST',
+			data: {
+				name,
+				email,
+				cnt,
+				location,
+				type
+			},
+			success: function (result) {
+				console.log(result);
+				var id = new Date().getTime().toString();
+
+                // console.log(JSON.parse(result));
+				if (JSON.parse(result)?.status) {
+					var alertDivHtml = `<div id='${id}' class="alert alert-success alert-dismissible fade show" role="alert">
+										<strong>Your message successfully sent.</strong> 
+										<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+										</button>
+									</div>`;
+					$('#alert-wrapper-user').append(alertDivHtml);
+					alertCloseHandler(id);
+				} else {
+					var alertDivHtml = `<div id='${id}' class="alert alert-danger alert-dismissible fade show" role="alert">
+					<strong>Your message not sent. Something went wrong.</strong> 
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+					</div>`;
+					$('#alert-wrapper').append(alertDivHtml);
+					alertCloseHandler(id);
+				}
+			},
+			error: function (request, status, error) {
+				alert('Something went wrong.');
+			},
+		});
+	});
+
+	
 });
