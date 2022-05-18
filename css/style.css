@@ -2182,6 +2182,9 @@ body {
   #aboutBody .navbar-light .navbar-toggler-icon{
     background-image: url(../Assets/svg/nav-icon.svg) !important;
   }
+  #aboutBody .navbar-brand .navBrand{
+    background-image: url(../Assets/Logo/logoDark.png) !important;
+  }
 }
 
 

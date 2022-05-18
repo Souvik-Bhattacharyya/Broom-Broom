@@ -15,139 +15,81 @@
             crossorigin="anonymous"
         >
     </head>
-    <body>
+    <body id="aboutBody">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="./Assets/Logo/logoDark.png" alt="">
+                <a class="navbar-brand" href="./index.html">
+                    <div class="navBrand"></div>
                 </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">
+                            <a class="nav-link" aria-current="page" href="./index.html">
                                 Home
                             </a>
-                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#vehicle">Our Vehicles</a>
+                            <a class="nav-link" href="./index.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#about">About Us</a>
+                            <a class="nav-link active" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#why">Why Us?</a>
+                            <a class="nav-link" href="./index.html">Why Us?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#client">Testimonials</a>
+                            <a class="nav-link" href="./index.html">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#contact">Contact Us</a>
+                            <a class="nav-link" href="./index.html">Careers</a>
                         </li>
                     </ul>
-                    <button class="btn btn-light btn-ride">Book a Free Ride</button>
+                    <button class="btn btn-warning btn-ride">Book a Free Ride</button>
                 </div>
-            </div>
-        </nav>
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Broom Broom</title>
-    <link rel="icon" href="./Assets/Logo/logoDark-Head.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
-
-<body id="aboutBody">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="./Assets/Logo/logoDark.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">
-                            Home
+    
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="./index.html">
+                            <div class="navBrand"></div>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Vehicles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Why Us?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Contact Us</a>
-                    </li>
-                </ul>
-                <button class="btn btn-warning btn-ride">Book a Free Ride</button>
-            </div>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="./Assets/Logo/logoDark.png" alt="">
-                    </a>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="collapse navbar-collapse show" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#hero">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#vehicle">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#why">Why Us?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#client">Reviews</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Careers</a>
-                            </li>
-                        </ul>
-                        <button class="btn btn-light btn-ride">Book a Free Ride</button>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Why Us?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Careers</a>
+                                </li>
+                            </ul>
+                            <button class="btn btn-light btn-ride">Book a Free Ride</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
     <!-- About------------------------------- -->
     <section id="aboutpg">
         <div class="container">
@@ -239,7 +181,7 @@
                     </div>
                     <div class="col-md-4">
                         <img src="./Assets/Icons/prity.jpg" class="" alt="...">
-                        <h4>Prity Pathalo</h4>
+                        <h4>Prity Prasad</h4>
                         <p>Founder</p>
                     </div>
                     <div class="col-md-4">
