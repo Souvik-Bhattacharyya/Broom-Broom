@@ -47,7 +47,8 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <button class="btn btn-light btn-ride">Book a Free Ride</button>
+                <button class="btn btn-light btn-ride" data-bs-toggle="modal"
+                data-bs-target="#signupModal">Book a Free Ride</button>
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -143,6 +144,7 @@
             data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" id="removeBg">
+                    <div class="modal-text"></div>
                     <div class="modal-body" id="signup-modal">
                         <button id="cross" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"> <i class="fas fa-"></i> </button>
@@ -392,7 +394,8 @@
                                 <p>Wants to avoid traffic and save time? With Broomboom you can now cut your travel time
                                     in half. Simply tap a button to reserve a bike/scooty and ride away in minutes, all
                                     at the most inexpensive rates in town.</p>
-                                <button class="btn btn-outline-warning">
+                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
+                                data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -405,7 +408,8 @@
                                     Ca<span>bs</span>
                                 </h1>
                                 <p>A simple and comfortable hatchback that becomes your daily ride.</p>
-                                <button class="btn btn-outline-warning">
+                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
+                                data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -419,7 +423,8 @@
                                 </h1>
                                 <p>Travel short distances without the trouble of handling and arranging change by
                                     booking an e-rickshaw ride online.</p>
-                                <button class="btn btn-outline-warning">
+                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
+                                data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -433,7 +438,8 @@
                                 </h1>
                                 <p>Don’t want to stand in a long queue? Book an auto with Broomboom and ride without
                                     having to hassle with an auto Pilot.</p>
-                                <button class="btn btn-outline-warning">
+                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
+                                data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -942,6 +948,22 @@
                     $("#navbar").removeClass("nav-bag");
                 }
             })
+
+            
+
+
+            $('.btn-outline-warning').on('click',function(){
+                $('.modal-text').text("We are yet to start service in your location please register now to ride first with Broomboom!");
+            });
+
+            $('.btn-ride').on('click',function(){
+                $('.modal-text').text("We are yet to start service in your location please register now to ride first with Broomboom!");
+            });
+
+            $('#signUp').on('click',function(){
+                $('.modal-text').text("");
+            });
+
         });
 
 
@@ -986,7 +1008,10 @@
             });
         });
     </script>
+<script>
 
+
+</script>
 
 </body>
 
