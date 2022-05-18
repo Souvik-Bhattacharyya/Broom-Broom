@@ -2164,6 +2164,21 @@ body {
     width: 100%;
     overflow-x: hidden;
   }
+  #aboutpg .main h1{
+    width: 100%;
+  }
+  #aboutpg .sub{
+    font-size: 16px;
+  }
+  #aboutpg .main p{
+    font-size: 14px;
+  }
+  #founder{
+    height: 100%;
+  }
+  #founder .col-md-4{
+    margin: 20px 0;
+  }
 }
 
 
