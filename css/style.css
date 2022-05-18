@@ -2179,6 +2179,9 @@ body {
   #founder .col-md-4{
     margin: 20px 0;
   }
+  #aboutBody .navbar-light .navbar-toggler-icon{
+    background-image: url(../Assets/svg/nav-icon.svg) !important;
+  }
 }
 
 
