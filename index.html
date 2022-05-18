@@ -163,8 +163,14 @@
                         <h3>Register as a Pilot</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div id="alert-wrapper">
+
+                    </div>
                     <div class="modal-body">
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form class="row g-3 needs-validation" id="pilot-form" novalidate>
+
+                            <input class="form-control" value="Pilot" id="type" type="hidden"/>
+
                             <div class="col-md-12">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" required />
@@ -176,26 +182,34 @@
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" required />
                                 <div class="invalid-feedback">
-                                    pleae enter your email
+                                    please enter your email
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="cnt" class="form-label">Contact</label>
                                 <input type="number" class="form-control" id="cnt" required />
                                 <div class="invalid-feedback">
-                                    pleae enter your contact no
+                                    please enter your contact no
                                 </div>
                             </div>
                             <div class="col-md-12">
+                                <label for="location" class="form-label">Location</label>
+                                <input type="text" class="form-control" id="location" required />
+                                <div class="invalid-feedback">
+                                    please enter your location
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-12">
                                 <label for="location" class="form-label">Location</label>
                                 <input type="text" class="form-control" id="location" readonly
                                     onclick="handlePermission()" required />
                                 <div class="invalid-feedback">
                                     you need to allow location to register your account
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-12">
                                 <button class="btn btn-primary" type="submit">Register</button>
+                                <!-- <button class="btn btn-submit">Submit</button> -->
                             </div>
                         </form>
                     </div>
@@ -215,37 +229,53 @@
                         <h3>Register as a User</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+                    <div id="alert-wrapper-user">
+
+                    </div>
                     <div class="modal-body">
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form class="row g-3 needs-validation" id="user-form" novalidate>
+
+                            <input class="form-control" value="User" id="type-user" type="hidden"/>
+
+
                             <div class="col-md-12">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" required />
+                                <input type="text" class="form-control" id="name-user" required />
                                 <div class="invalid-feedback">
                                     Please enter a name
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required />
+                                <input type="email" class="form-control" id="email-user" required />
                                 <div class="invalid-feedback">
-                                    pleae enter your email
+                                    please enter your email
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="cnt" class="form-label">Contact</label>
-                                <input type="number" class="form-control" id="cnt" required />
+                                <input type="number" class="form-control" id="cnt-user" required />
                                 <div class="invalid-feedback">
-                                    pleae enter your contact no
+                                    please enter your contact no
                                 </div>
                             </div>
+
                             <div class="col-md-12">
+                                <label for="location" class="form-label">Location</label>
+                                <input type="text" class="form-control" id="location-user" required />
+                                <div class="invalid-feedback">
+                                    please enter your location
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-md-12">
                                 <label for="location" class="form-label">Location</label>
                                 <input type="text" class="form-control" id="location" readonly
                                     onclick="handlePermission()" required />
                                 <div class="invalid-feedback">
                                     you need to allow location to register your account
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-12">
                                 <button class="btn btn-primary" type="submit">Register</button>
                             </div>
@@ -734,21 +764,22 @@
                 </div>
                 <form class="my-4" id="contact-form">
                     <div class="mb-3">
-                        <input type="text" placeholder="Enter Your Name" class="form-control" id="input-name">
+                        <input type="text" placeholder="Enter Your Name" class="form-control" id="input-name" required>
                     </div>
                     <div class="mb-3">
-                        <input type="number" placeholder="Mobile Number" class="form-control" id="input-mobile">
+                        <input type="number" placeholder="Mobile Number" class="form-control" id="input-mobile"
+                        required >
                     </div>
                     <div class="mb-3">
                         <input type="email" class="form-control" id="input-email" aria-describedby="email"
-                            placeholder="Enter Your Email">
+                            placeholder="Enter Your Email" required>
                     </div>
                     <div class="mb-3">
                         <textarea style="resize: none;" class="form-control" id="input-messa"
-                            placeholder="Leave A Message" rows="5"></textarea>
+                            placeholder="Leave A Message"  rows="5" required></textarea>
                     </div>
                     <div class="form-floating mb-3">
-                        <button class="btn btn-submit" type="Submit">Submit</button>
+                        <button class="btn btn-submit">Submit</button>
                     </div>
                 </form>
             </div>
