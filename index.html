@@ -47,8 +47,8 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <button class="btn btn-light btn-ride" data-bs-toggle="modal"
-                data-bs-target="#signupModal">Book a Free Ride</button>
+                <button class="btn btn-light btn-ride" data-bs-toggle="modal" data-bs-target="#signupModal">Book a Free
+                    Ride</button>
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -231,8 +231,17 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3>Register as a User</h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="alert w-100 alert-warning d-flex align-items-center" role="alert">
+                            <i class="fas fa-exclamation-triangle"
+                                style="width:24px; height:24px; line-height: 22px;"></i>
+                            <div>
+                                An example warning alert with an icon
+                            </div>
+                        </div>
+                        <div class="d-flex" style="width: 100%; align-items: center;">
+                            <h3>Register as a User</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
                     </div>
                     <div id="alert-wrapper-user">
 
@@ -397,8 +406,8 @@
                                 <p>Wants to avoid traffic and save time? With Broomboom you can now cut your travel time
                                     in half. Simply tap a button to reserve a bike/scooty and ride away in minutes, all
                                     at the most inexpensive rates in town.</p>
-                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
-                                data-bs-target="#signupModal">
+                                <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -411,8 +420,8 @@
                                     Ca<span>bs</span>
                                 </h1>
                                 <p>A simple and comfortable hatchback that becomes your daily ride.</p>
-                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
-                                data-bs-target="#signupModal">
+                                <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -426,8 +435,8 @@
                                 </h1>
                                 <p>Travel short distances without the trouble of handling and arranging change by
                                     booking an e-rickshaw ride online.</p>
-                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
-                                data-bs-target="#signupModal">
+                                <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -441,8 +450,8 @@
                                 </h1>
                                 <p>Don’t want to stand in a long queue? Book an auto with Broomboom and ride without
                                     having to hassle with an auto Pilot.</p>
-                                <button class="btn btn-outline-warning"  data-bs-toggle="modal"
-                                data-bs-target="#signupModal">
+                                <button class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#signupModal">
                                     Book a free Ride
                                     <i class="ps-2 fas fa-chevron-right"></i>
                                 </button>
@@ -756,7 +765,7 @@
                     </div>
                 </div>
                 <div class="col-md-6" id="careerImg">
-                    <img src="./Assets/Icons/office1.png" alt="">
+                    <img src="./Assets/Icons/about.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -825,11 +834,15 @@
                     <div class="social-handel">
                         <h1> Social Handles</h1>
                         <div class="social-icons mt-3">
-                            <a href="https://www.facebook.com/broomboom4u" target="_blank"><i class="fab fa-facebook fbicon"> </i></a>
-                            <a href="https://www.linkedin.com/in/broomboom4u" target="_blank"><i class="fab fa-linkedin fbicon"></i></a>
-                            <a href="https://www.instagram.com/BroomBoom4u/?fbclid" target="_blank"><i class="fab fa-instagram fbicon"></i></a>
-                            <a href="https://twitter.com/broomboom3?fbclid" target="_blank"><i class="fab fa-twitter fbicon"></i></a>
-                            
+                            <a href="https://www.facebook.com/broomboom4u" target="_blank"><i
+                                    class="fab fa-facebook fbicon"> </i></a>
+                            <a href="https://www.linkedin.com/in/broomboom4u" target="_blank"><i
+                                    class="fab fa-linkedin fbicon"></i></a>
+                            <a href="https://www.instagram.com/BroomBoom4u/?fbclid" target="_blank"><i
+                                    class="fab fa-instagram fbicon"></i></a>
+                            <a href="https://twitter.com/broomboom3?fbclid" target="_blank"><i
+                                    class="fab fa-twitter fbicon"></i></a>
+
                             <!-- <i class="fab fa-whatsapp fbicon"></i> -->
                         </div>
                     </div>
@@ -954,22 +967,26 @@
                 }
             })
 
-            
-
-
-            $('.btn-outline-warning').on('click',function(){
-                $('.modal-text').text("We are yet to start service in your location please register now to ride first with Broomboom!");
-            });
-
-            $('.btn-ride').on('click',function(){
-                $('.modal-text').text("We are yet to start service in your location please register now to ride first with Broomboom!");
-            });
-
-            $('#signUp').on('click',function(){
-                $('.modal-text').text("");
-            });
 
         });
+
+        //     $('.btn-outline-warning').on('click', function () {
+        //         $('.modal-text').text(
+        //             "We are yet to start service in your location please register now to ride first with Broomboom!"
+        //         );
+        //     });
+
+        //     $('.btn-ride').on('click', function () {
+        //         $('.modal-text').text(
+        //             "We are yet to start service in your location please register now to ride first with Broomboom!"
+        //         );
+        //     });
+
+        //     $('#signUp').on('click', function () {
+        //         $('.modal-text').text("");
+        //     });
+
+        
 
 
 
@@ -1014,15 +1031,15 @@
         });
 
         const pageMapping = {
-            hero : "Home",
-            vehicle : "Services",
-            aboutSec : "About",
+            hero: "Home",
+            vehicle: "Services",
+            aboutSec: "About",
             why: "Why Us?",
-            surveillance : "Reviews",
-            career : "Careers",
+            surveillance: "Reviews",
+            career: "Careers",
             contact: "Contact"
         }
-        
+
         let navItem = document.getElementsByClassName("nav-item");
         navItem = Object.values(navItem);
 
@@ -1030,23 +1047,21 @@
             $('section').each(function () {
                 if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(
                         this).outerHeight()) > $(document).scrollTop()) {
-                            navItem.forEach((item)=>{
-                                if(item.children[0].innerText === pageMapping[$(this).attr('id')])
-                                // console.log("done");
-                                item.children[0].classList.add("active");
-                                else
-                                item.children[0].classList.remove("active");
-                            })
-
-                    console.log($(this).attr('id'));
+                    navItem.forEach((item) => {
+                        if (item.children[0].innerText === pageMapping[$(this).attr('id')])
+                            // console.log("done");
+                            item.children[0].classList.add("active");
+                        else
+                            item.children[0].classList.remove("active");
+                    })
                 }
             });
         });
     </script>
-<script>
+    <script>
 
 
-</script>
+    </script>
 
 </body>
 
