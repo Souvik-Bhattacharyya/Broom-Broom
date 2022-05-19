@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body style="overflow: hidden;">
+<body style="overflow: hidden;" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -32,10 +32,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#vehicle">Services</a>
+                        <a id="service" class="nav-link" href="#vehicle">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About</a>
+                        <a id="about" class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#why">Why Us?</a>
@@ -171,7 +171,7 @@
                     <div class="modal-body">
                         <form class="row g-3 needs-validation" id="pilot-form" novalidate>
 
-                            <input class="form-control" value="Pilot" id="type" type="hidden"/>
+                            <input class="form-control" value="Pilot" id="type" type="hidden" />
 
                             <div class="col-md-12">
                                 <label for="name" class="form-label">Name</label>
@@ -237,7 +237,7 @@
                     <div class="modal-body">
                         <form class="row g-3 needs-validation" id="user-form" novalidate>
 
-                            <input class="form-control" value="User" id="type-user" type="hidden"/>
+                            <input class="form-control" value="User" id="type-user" type="hidden" />
 
 
                             <div class="col-md-12">
@@ -461,7 +461,7 @@
         </div>
     </section>
     <!-- About------------------------------- -->
-    <section id="about">
+    <section id="aboutSec">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex" style="align-items:center;">
@@ -748,7 +748,7 @@
                         <h4>Career Opportunities</h4>
                         <p>Join Our Community and be a pilot TO EARN EXTRA INCENTIVES AND BONUS. <br>Send your resume
                             for any Post at <a href="mailTo: hr@broomboom.com">hr@broomboom.com</a> If you want to be a
-                            Member of BROOMBOOM. <br> For any Enquiry, Contact Us At 
+                            Member of BROOMBOOM. <br> For any Enquiry, Contact Us At
                             <a href="mailTo: support@broomboom.com">support@broomboom.com</a></p>
                     </div>
                 </div>
@@ -774,7 +774,7 @@
                     </div>
                     <div class="mb-3">
                         <input type="number" placeholder="Mobile Number" class="form-control" id="input-mobile"
-                        required >
+                            required>
                     </div>
                     <div class="mb-3">
                         <input type="email" class="form-control" id="input-email" aria-describedby="email"
@@ -782,7 +782,7 @@
                     </div>
                     <div class="mb-3">
                         <textarea style="resize: none;" class="form-control" id="input-messa"
-                            placeholder="Leave A Message"  rows="5" required></textarea>
+                            placeholder="Leave A Message" rows="5" required></textarea>
                     </div>
                     <div class="form-floating mb-3">
                         <button class="btn btn-submit">Submit</button>
@@ -1005,6 +1005,32 @@
             });
             $("#carouselExampleDark").swipeleft(function () {
                 $(this).carousel('next');
+            });
+        });
+
+        const pageMapping = {
+            hero : "Home",
+            vehicle : "Services",
+            aboutSec : "About",
+            why: "Why Us?",
+            surveillance : "Reviews",
+            career : "Careers"
+        }
+        
+        let navItem = document.getElementsByClassName("nav-item");
+        navItem = Object.values(navItem);
+
+        $(document).scroll(function () {
+            $('section').each(function () {
+                if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(
+                        this).outerHeight()) > $(document).scrollTop()) {
+                            navItem.forEach((item)=>{
+                                if()
+                                console.log(item.children[0].innerText);
+                            })
+
+                    console.log($(this).attr('id'));
+                }
             });
         });
     </script>
