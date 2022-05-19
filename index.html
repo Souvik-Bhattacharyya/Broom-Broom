@@ -35,7 +35,7 @@
                         <a id="service" class="nav-link" href="#vehicle">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a id="about" class="nav-link" href="./about.html">About</a>
+                        <a id="about" class="nav-link" href="#aboutSec">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#why">Why Us?</a>
@@ -72,7 +72,7 @@
                                 <a class="nav-link" href="#vehicle">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
+                                <a class="nav-link" href="#aboutSec">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#why">Why Us?</a>
@@ -82,6 +82,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#career">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                         <button class="btn btn-light btn-ride">Book a Free Ride</button>
@@ -146,8 +149,8 @@
                 <div class="modal-content" id="removeBg">
                     <div class="modal-text"></div>
                     <div class="modal-body" id="signup-modal">
-                        <button id="cross" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"> <i class="fas fa-"></i> </button>
+                        <!-- <button id="cross" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"> <i class="fas fa-"></i> </button> -->
                         <img src="./Assets/svg/driver.svg" class="icon1" alt="" data-bs-target="#driverSignupModal"
                             data-bs-toggle="modal" data-bs-dismiss="modal" />
                         <img data-bs-target="#userSignupModal" data-bs-toggle="modal" data-bs-dismiss="modal"
@@ -477,7 +480,7 @@
                             Broomboom is one of the leading bikes taxi cab aggregator in West Bengal. With lots of hard
                             work and perseverance we have made a place for ourselves in the Market.
                             The idea popped out during pandemic as the founders of Broomboom: Swarnava Roy, Gourab Das &
-                            Prity Kumary Prasad, saw that during the pandemic, people had to face many problems due to
+                            Prity Prasad, saw that during the pandemic, people had to face many problems due to
                             unavailability of transport.
                         </p>
                         <button class="btn btn-abt" onclick="window.open('/about.html','_self')" ;> Read
@@ -825,7 +828,7 @@
                             <a href="https://www.facebook.com/broomboom4u" target="_blank"><i class="fab fa-facebook fbicon"> </i></a>
                             <a href="https://www.linkedin.com/in/broomboom4u" target="_blank"><i class="fab fa-linkedin fbicon"></i></a>
                             <a href="https://www.instagram.com/BroomBoom4u/?fbclid" target="_blank"><i class="fab fa-instagram fbicon"></i></a>
-                            <a href="https://www.instagram.com/BroomBoom4u/?fbclid" target="_blank"><i class="fab fa-twitter fbicon"></i></a>
+                            <a href="https://twitter.com/broomboom3?fbclid" target="_blank"><i class="fab fa-twitter fbicon"></i></a>
                             
                             <!-- <i class="fab fa-whatsapp fbicon"></i> -->
                         </div>
@@ -835,10 +838,12 @@
                 <div class="col-md-4">
                     <div class="options">
                         <a href="#hero">Home</a>
-                        <a href="">Our Services</a>
-                        <a href="">About us</a>
-                        <a href="">Why us</a>
-                        <a href="">Contact us</a>
+                        <a href="#vehicle">Our Services</a>
+                        <a href="#aboutSec">About us</a>
+                        <a href="#why">Why us</a>
+                        <a href="#client">Reviews</a>
+                        <a href="#career">Careers</a>
+                        <a href="#contact">Contact us</a>
                     </div>
                 </div>
 
@@ -1014,7 +1019,8 @@
             aboutSec : "About",
             why: "Why Us?",
             surveillance : "Reviews",
-            career : "Careers"
+            career : "Careers",
+            contact: "Contact"
         }
         
         let navItem = document.getElementsByClassName("nav-item");
@@ -1025,8 +1031,11 @@
                 if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(
                         this).outerHeight()) > $(document).scrollTop()) {
                             navItem.forEach((item)=>{
-                                if()
-                                console.log(item.children[0].innerText);
+                                if(item.children[0].innerText === pageMapping[$(this).attr('id')])
+                                // console.log("done");
+                                item.children[0].classList.add("active");
+                                else
+                                item.children[0].classList.remove("active");
                             })
 
                     console.log($(this).attr('id'));
