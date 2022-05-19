@@ -474,6 +474,10 @@ section {
 
 /* Hero Modal */
 
+.modal-header {
+  flex-direction: column;
+}
+
 #hero .modal {
   background: rgba(0, 0, 0, 0.32);
   backdrop-filter: blur(4px);
@@ -495,6 +499,15 @@ section {
   color: #333;
   background-color: transparent;
   border: none;
+}
+
+.modal .alert{
+  padding: 0;
+}
+
+.modal .alert-warning{
+  background-color: transparent;
+  border-color: transparent;
 }
 
 #hero #cross:hover {
